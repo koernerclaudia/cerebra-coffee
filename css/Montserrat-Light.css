@@ -6,13 +6,13 @@
 */
 
 @font-face {
-    font-family: 'Montserrat1';
-    src: url('/css/Montserrat1.woff2') format('woff2'),
-        url('/css/Montserrat1.otf') format('opentype'),
-        url('/css/Montserrat1.woff') format('woff'),
-        url('/css/Montserrat1.svg') format('svg'),
-        url('/css/Montserrat1.ttf') format('truetype'),
-        url('/css/Montserrat1.eot') format('embedded opentype')
+    font-family: 'Montserrat-Light';
+    src: url('/css/Montserrat-Light.woff2') format('woff2'),
+        url('/css/Montserrat-Light.otf') format('opentype'),
+        url('/css/Montserrat-Light.woff') format('woff'),
+        url('/css/Montserrat-Light.svg') format('svg'),
+        url('/css/Montserrat-Light.ttf') format('truetype'),
+        url('/css/Montserrat-Light.eot') format('embedded opentype')
         ;
     font-weight: 300;
     font-style: normal;
@@ -20,12 +20,12 @@
 }
 
 body {
-    font-family: 'Montserrat1', sans-serif;
+    font-family: 'Montserrat-Light', sans-serif;
 }
 
 h1.sw-font-family-default,
 h2.sw-font-family-default {
-    font-family: 'Montserrat1', sans-serif;
+    font-family: 'Montserrat-Light', sans-serif;
 }
 
 section.sw-font-family-default,
@@ -45,17 +45,17 @@ h3.sw-font-family-default,
 h4.sw-font-family-default,
 h5.sw-font-family-default,
 h6.sw-font-family-default {
-    font-family: 'Montserrat1', sans-serif;
+    font-family: 'Montserrat-Light', sans-serif;
 }
 
 input.sw-font-family-default,
 textarea.sw-font-family-default {
-    font-family: 'Montserrat1', sans-serif;
+    font-family: 'Montserrat-Light', sans-serif;
 }
 
 .sw-font-family-default::-webkit-input-placeholder,
 .sw-font-family-default::-moz-placeholder,
 .sw-font-family-default:-ms-input-placeholder,
 .sw-font-family-default:-moz-placeholder {
-    font-family: 'Montserrat1', sans-serif;
+    font-family: 'Montserrat-Light', sans-serif;
 }
