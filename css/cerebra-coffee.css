@@ -506,14 +506,15 @@
     animation: 20s cloud-move-reverse infinite alternate linear;
   }
   
-  /*
-  media queries */
-  
+  /* MEDIA QUERIES */
+
+   /* MOBILE DEVICES */
   @media all and (max-width: 500px) {
     .contact3,
     .locations,
     .projects3,
     .profile
+    .green_box
     /* .current3  */ {
       grid-template-columns: 1fr;
     }
@@ -584,7 +585,9 @@
     }
   }
   
-  @media all and (min-width: 500px) and (max-width: 1000px) {
+   /* MOBILE + TABLET */
+
+  @media all and (min-width: 500px) and (max-width: 750px) {
     .locations,
     .projects3 {
       grid-template-columns: 1fr 1fr;
@@ -603,6 +606,12 @@
       grid-template-columns: 1fr 1fr;
       grid-gap: 20px;
     }
+
+    .green_box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 25px;
+    }
   
     .projects3-item:nth-child(6) {
       grid-row-start: span 1;
@@ -616,7 +625,7 @@
     }
   }
   
-  @media all and (max-width: 1000px) {
+  @media all and (min-width: 750px) and (max-width: 1000px) {
     .contact3,
     .locations,
     .projects3 {
@@ -625,15 +634,15 @@
     }
   
     h1 {
-      font-size: 42px;
+      font-size: 50px;
     }
   
     h2 {
-      font-size: 30px;
+      font-size: 40px;
     }
   
     h3 {
-      font-size: 26px;
+      font-size: 30px;
     }
   }
   
