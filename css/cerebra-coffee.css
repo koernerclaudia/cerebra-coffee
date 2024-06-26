@@ -3,10 +3,6 @@
     --cerebra-background-dark: #292929;
     --cerebra-beige: #FBF0E3;
     --cerebra-brown: #6E5F4F;
-
-    /* --primary-link-color: #fff;
-    --secondary-link-color: #f0dcfe;
-    --box-color: #afe1f3; */
     --text-color: #ffffff;
     --max-box-width: 1000px;
     --max-green-box: 320px;
@@ -108,23 +104,6 @@
 .typewriter-text {
     animation: blink-caret 0.75s step-end infinite;
 }
-  .company.logo {
-    width: auto;
-    text-align: center;
-  }
-  
-  .company-logo img {
-    height: 30px;
-  }
-  
-  .company-logo:hover img {
-    /* lets the mouse appear as a hand when hovering over the button */
-    cursor: pointer;
-  
-    /* reduces the opacity of the button to 80% */
-    opacity: 0.6;
-  }
-  
 
 
   .page-header {
@@ -221,104 +200,6 @@
    
   }
   
-  /* .profile img {
-    max-height: 200px;
-    min-width: 100px;
-    text-align: center;
-  }
-  
-  .profile-img__center {
-    text-align: center;
-  }
-  
-  .employers {
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 20px;
-    width: 100%;
-  }
-  
-  .employers div {
-    text-align: center;
-    flex-grow: 1;
-    padding: 20px;
-  } */
-  
-  /* .current3 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 15px;
-  }
-  
-  .current3-item {
-    background-color: var(--box-color);
-    border-radius: var(--border-radius);
-    padding: 10px;
-    transition: background-color 0.3s ease;
-    cursor: pointer;
-  }
-  
-  .current3-item:hover {
-    background-color: var(--secondary-link-color);
-    transform: scale (0.95);
-  } */
-  
-  .projects3 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 15px;
-  }
-  
-  .projects3-item {
-    background-color: var(--box-color);
-    border-radius: var(--border-radius);
-    padding: 10px;
-    transition: background-color 0.3s ease;
-    cursor: pointer;
-  }
-  
-  .projects3-item:hover {
-    background-color: var(--secondary-link-color);
-    transform: scale(0.95);
-  }
-  
-  .projects3-item:nth-child(6) {
-    grid-row-start: span 2;
-  }
-  
-  .projects3-item:nth-child(9) {
-    grid-column-start: span 3;
-  }
-  
-  .contact3 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 15px;
-  }
-  
-  .contact3 div:nth-child(1) {
-    grid-row-start: span 4;
-    grid-column-start: span 2;
-  }
-  
-  .locations {
-    display: grid;
-    grid-template-columns: 50% 50%;
-  }
-  
-  /* .locations div:nth-child(5), div:nth-child(6){
-    grid-column-start: span 2;
-  } */
-  .locations img {
-    width: 100%;
-  }
-  
-  .profile,
-  .locations div {
-    flex-grow: 1;
-    flex-shrink: 2;
-    padding: 15px;
-  }
   
   button,
   .button {
@@ -372,26 +253,6 @@
     transition: ease-in 0.3s;
   }
   
-  .special-text {
-    background-color: var(--primary-color);
-    color: var(--primary-link-color);
-  }
-  
-  .profile__portrait {
-    max-width: 250px;
-    margin-right: 40px;
-    border-radius: 50%;
-  }
-  
-  .aboutme {
-    display: grid;
-    grid-column: 1;
-    max-width: var(--max-box-width);
-    margin: 0 auto 15px;
-    background-color: var(--primary-link-color);
-    border-radius: var(--border-radius);
-    padding: 20px;
-  }
   
   .form {
     display: block;
@@ -409,104 +270,6 @@
     font-weight: bold;
   }
   
-  input,
-  select,
-  textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: var(--border-radius);
-    box-sizing: border-box;
-  }
-  
-  @keyframes color-change {
-    0% {
-      fill: #fcffad;
-    }
-  
-    25% {
-      fill: #edc655;
-    }
-  
-    50% {
-      fill: #ef8b55;
-    }
-  
-    75% {
-      fill: #f76414;
-    }
-  
-    100% {
-      fill: #f73838;
-    }
-  }
-  
-  @keyframes color-change {
-    0% {
-      fill: #fcffad;
-    }
-  
-    25% {
-      fill: #edc655;
-    }
-  
-    50% {
-      fill: #ef8b55;
-    }
-  
-    75% {
-      fill: #f76414;
-    }
-  
-    100% {
-      fill: #f73838;
-    }
-  }
-  
-  /* .sun {
-    animation-duration: 4s;
-    animation-name: color-change;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
-  } */
-  
-  /* @keyframes cloud-move {
-    from {
-      transform: translate(0, 50px);
-    }
-  
-    to {
-      transform: translate(200px, 50px);
-    }
-  }
-  
-  .cloud-front {
-    animation-duration: 30s;
-    animation-name: cloud-move;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
-  }
-  
-  .cloud-front {
-    animation: 15s cloud-move infinite alternate linear;
-  }
-  
-  @keyframes cloud-move-reverse {
-    from {
-      transform: translate(446px, 48px);
-    }
-  
-    to {
-      transform: translate(100px, 48px);
-    }
-  }
-  
-  .cloud-back {
-    animation: 20s cloud-move-reverse infinite alternate linear;
-  } */
   
   /* MEDIA QUERIES */
 
