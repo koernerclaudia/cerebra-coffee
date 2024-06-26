@@ -1,13 +1,107 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Cerebra - Font tryout</title>
-    <link href="css/Montserrat-Light.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-   <h1>Cerebra Coffee</h1>
-   <p>Some more text there for now checking the e is coming through.</p>
-  </body>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claudia Koerner - Home</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Aclonica&family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="CSS/cerebra-coffee.css">
+  <link href="img/fav-dragonfly.png" rel="shortcut icon">
+</head>
+
+<body>
+  <!-- This is a HTML comment; it won’t be visible in the browser -->
+  <header class="page-header">
+    <img src="img/dragonfly-light.svg" alt="a picture of a dragonfly in a mix of blue and pink colouring"
+      class="page-header__item">
+    <nav class="page-header__item">
+      <ul role="menubar" class="navigation-list">
+        <li role="presentation">
+          <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
+        </li>
+        <li role="presentation">
+          <a href="about.html" role="menuitem" class="navigation-list__item">About me</a>
+        </li>
+        <li role="presentation">
+          <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+        </li>
+        <li role="presentation">
+          <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <section class="container">
+    <div class="profile">
+      <div><img class="profile__portrait" src="img/photo-of-Claudia.jpg" alt="A picture of Claudia"></div>
+      <div>
+        <h1>Hello World</h1>
+        <p>My Name is Claudia Koerner.</p>
+        <p>I am a <span class="special-text"> &lt;web&gt;</span> developer from Berlin.</p>
+        <a href="#">Check out some of my code</a>
+      </div>
+    </div>
+
+  </section>
+  <section class="container">
+    <div class="profile">
+      <div>
+        <h1>Administrator</h1>
+        <div class="profile-img__center"><img src="SVGs/assistant.svg" alt="Image of an Executive Assistant"></div>
+        <br>I spent 20 years as an Executive Assistant. I finally decided to follow my passion for a more creative
+        career. I got certified as a Web Designer in 2007. Since then, I've dabbled with HTML and CSS. I also learned a
+        bit of
+        Javascript.
+      </div>
+      <div>
+        <h1>Creative Background</h1>
+        <div class="profile-img__center"><img src="SVGs/designer.svg" alt="Image of a Designer"></div>
+        <br> But now is the time to dive deeper into the career of a developer. In all my
+        admin-heavy roles, I managed to inject some of my creativity and web experience into my tasks. I also took on
+        projects that
+        allowed me to live out this need for working with visual design.
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <div>
+      <h1>Previous employers</h1>
+    </div>
+    <div class="employers">
+      <div class="company-logo"><a href="https://atlanticlabs.de" target="_blank">
+          <img src="img/atlanticlabs.svg" alt="Atlantic Labs"></a></div>
+      <div class="company-logo"><a href="https://contentful.com" target="_blank">
+          <img src="img/contentful.png" alt="Contentful"></a></div>
+      <div class="company-logo"><a href="https://soundcloud.com" target="_blank">
+          <img src="img/soundcloud.png" alt="SoundCloud"></a></div>
+      <div class="company-logo"><img src="img/juke.png" alt="Juke GmbH"></div>
+      <div class="company-logo"><img src="img/247.png" alt="24-7 Entertainment GmbH"></div>
+      <div class="company-logo"><a href="https://lcmenergy.com" target="_blank">
+          <img src="img/lcm.png" alt="LCM Oil & Gas"></a></div>
+    </div>
+  </section>
+  <footer class="page-footer">
+    <p>Find me on</p>
+    <div class="social-media">
+      <a href="https://github.com/koernerclaudia" target="_blank"><img class="social-media-icon" src="img/github-icon.svg" alt="github"></a>
+      <a href="https://x.com/cldkrnr" target="_blank"><img src="img/x-icon.svg" alt="twitter"></a>
+      <a href="https://www.linkedin.com/in/claudiakoerner81/" target="_blank"><img src="img/linkedin-icon.svg" alt="linkedin"></a>
+      <br>
+      <a href="#">Back to top</a>
+    </div>
+  </footer>
+  <script src="js/tota11y.min.js"></script>
+</body>
+
 </html>

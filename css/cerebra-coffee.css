@@ -1,0 +1,561 @@
+:root {
+    --cerebra-green: #4D635E;
+    --cerebra-background-dark: #292929;
+
+    /* --primary-link-color: #fff;
+    --secondary-link-color: #f0dcfe;
+    --box-color: #afe1f3; */
+    --text-color: #ffffff;
+    --max-box-width: 800px;
+    --border-radius: 20px;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: var(--cerebra-background-dark);
+    color: var(--text-color);
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    /* font-size: smaller; */
+    line-height: 1.4;
+    height: auto;
+    min-height: 1500px;
+  }
+  
+  h1,
+  h2,
+  h3 { 
+    font-family: "Aclonica";
+    color: var(--primary-color);
+    line-height: 1.2;
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  h1 {
+    font-size: 24px;
+  }
+  
+  h2 {
+    font-size: 20px;
+  }
+  
+  h3 {
+    font-size: 16px;
+  }
+  
+  a {
+    color: var(--primary-link-color);
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: var(--primary-link-color);
+    text-decoration: underline;
+  }
+  
+  a:hover,
+  a:focus {
+    /* Hover state - focus takes care of highlighting when someone uses keyboard to navigate */
+    color: var(--secondary-link-color);
+    text-decoration: underline;
+    transition: ease-in 0.5s;
+  }
+  
+  a:active {
+    /* selected link, current page */
+    color: var(--secondary-link-color);
+    text-decoration: underline;
+  }
+  
+  .company.logo {
+    width: auto;
+    text-align: center;
+  }
+  
+  .company-logo img {
+    height: 30px;
+  }
+  
+  .company-logo:hover img {
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+  
+    /* reduces the opacity of the button to 80% */
+    opacity: 0.6;
+  }
+  
+  .page-header {
+    display: flex;
+    max-width: var(--max-box-width);
+    padding: 10px;
+    margin: 0 auto;
+  }
+  
+  .page-header__item {
+    flex: 0 1 50px;
+  }
+  
+  .page-header__item:last-child {
+    flex-grow: 1;
+    text-align: right;
+  }
+  
+  .navigation-list {
+    list-style-type: none;
+  }
+  
+  .navigation-list li {
+    display: inline-block;
+    margin-left: 15px;
+  }
+  
+  .navigation-list__item--active {
+    text-decoration: underline;
+    color: var(--primary-color);
+  }
+  
+  .page-footer {
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: var(--primary-link-color);
+    margin-bottom: 30px;
+  }
+  
+  .container {
+    max-width: var(--max-box-width);
+    min-width: 280px;
+    margin: 25px auto 25px auto;
+    background-color: var(--cerebra-green);
+    border-radius: var(--border-radius);
+    padding: 20px;
+    /* box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.3); */
+  }
+
+  .green_right, 
+  .green_left
+
+  .green_right, 
+  .green_left img {
+    border-radius: var(--border-radius);
+  }
+  
+  /* ---------------- GRIDS ------------------ */
+  .profile {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  
+  .profile img {
+    max-height: 200px;
+    min-width: 100px;
+    text-align: center;
+  }
+  
+  .profile-img__center {
+    text-align: center;
+  }
+  
+  .employers {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    width: 100%;
+  }
+  
+  .employers div {
+    text-align: center;
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
+  /* .current3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+  }
+  
+  .current3-item {
+    background-color: var(--box-color);
+    border-radius: var(--border-radius);
+    padding: 10px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .current3-item:hover {
+    background-color: var(--secondary-link-color);
+    transform: scale (0.95);
+  } */
+  
+  .projects3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+  }
+  
+  .projects3-item {
+    background-color: var(--box-color);
+    border-radius: var(--border-radius);
+    padding: 10px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .projects3-item:hover {
+    background-color: var(--secondary-link-color);
+    transform: scale(0.95);
+  }
+  
+  .projects3-item:nth-child(6) {
+    grid-row-start: span 2;
+  }
+  
+  .projects3-item:nth-child(9) {
+    grid-column-start: span 3;
+  }
+  
+  .contact3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+  }
+  
+  .contact3 div:nth-child(1) {
+    grid-row-start: span 4;
+    grid-column-start: span 2;
+  }
+  
+  .locations {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  
+  /* .locations div:nth-child(5), div:nth-child(6){
+    grid-column-start: span 2;
+  } */
+  .locations img {
+    width: 100%;
+  }
+  
+  .profile,
+  .locations div {
+    flex-grow: 1;
+    flex-shrink: 2;
+    padding: 15px;
+  }
+  
+  button,
+  .button {
+    /* overwrites browser defaults and resets the border */
+    border: none;
+    min-width: 180px;
+  
+    /* takes the font from the outer container */
+    font-family: inherit;
+    font-size: inherit;
+  
+    /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+    background-color: var(--primary-color);
+    color: var(--primary-link-color);
+    text-decoration: none;
+  
+    /* adds spacing to the button (this will be discussed more in-depth later) */
+    padding: 10px 15px;
+    border-radius: var(--border-radius);
+  
+    /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+    border-bottom: 2px solid rgba(136, 51, 255, 0.3);
+    transition-duration: 0.5s;
+    transition-property: opacity;
+  }
+  
+  button:hover,
+  button:focus,
+  .button:hover,
+  .button:focus {
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+  
+    /* reduces the opacity of the button to 80% */
+    opacity: 0.6;
+  }
+  
+  .button__secondary {
+    background-color: var(--secondary-color);
+    color: var(--primary-link-color);
+  }
+  
+  .special-text {
+    background-color: var(--primary-color);
+    color: var(--primary-link-color);
+  }
+  
+  .profile__portrait {
+    max-width: 250px;
+    margin-right: 40px;
+    border-radius: 50%;
+  }
+  
+  .aboutme {
+    display: grid;
+    grid-column: 1;
+    max-width: var(--max-box-width);
+    margin: 0 auto 15px;
+    background-color: var(--primary-link-color);
+    border-radius: var(--border-radius);
+    padding: 20px;
+  }
+  
+  .form {
+    display: block;
+    max-width: 500px;
+    padding: 20px;
+    margin: 0 15px 15px;
+    border: 1px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    background-color: var(--primary-link-color);
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  input,
+  select,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+    box-sizing: border-box;
+  }
+  
+  @keyframes color-change {
+    0% {
+      fill: #fcffad;
+    }
+  
+    25% {
+      fill: #edc655;
+    }
+  
+    50% {
+      fill: #ef8b55;
+    }
+  
+    75% {
+      fill: #f76414;
+    }
+  
+    100% {
+      fill: #f73838;
+    }
+  }
+  
+  @keyframes color-change {
+    0% {
+      fill: #fcffad;
+    }
+  
+    25% {
+      fill: #edc655;
+    }
+  
+    50% {
+      fill: #ef8b55;
+    }
+  
+    75% {
+      fill: #f76414;
+    }
+  
+    100% {
+      fill: #f73838;
+    }
+  }
+  
+  .sun {
+    animation-duration: 4s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
+  
+  @keyframes cloud-move {
+    from {
+      transform: translate(0, 50px);
+    }
+  
+    to {
+      transform: translate(200px, 50px);
+    }
+  }
+  
+  .cloud-front {
+    animation-duration: 30s;
+    animation-name: cloud-move;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
+  
+  .cloud-front {
+    animation: 15s cloud-move infinite alternate linear;
+  }
+  
+  @keyframes cloud-move-reverse {
+    from {
+      transform: translate(446px, 48px);
+    }
+  
+    to {
+      transform: translate(100px, 48px);
+    }
+  }
+  
+  .cloud-back {
+    animation: 20s cloud-move-reverse infinite alternate linear;
+  }
+  
+  /*
+  media queries */
+  
+  @media all and (max-width: 500px) {
+    .contact3,
+    .locations,
+    .projects3,
+    .profile
+    /* .current3  */ {
+      grid-template-columns: 1fr;
+    }
+  
+    .profile div:nth-child(2) {
+      order: 1;
+    }
+  
+    .locations div:nth-child(1) {
+      order: 1;
+    }
+  
+    .locations div:nth-child(2) {
+      order: 2;
+    }
+  
+    .locations div:nth-child(3) {
+      order: 4;
+    }
+  
+    .locations div:nth-child(4) {
+      order: 3;
+    }
+  
+    .locations div:nth-child(5) {
+      order: 5;
+    }
+  
+    .locations div:nth-child(6) {
+      order: 6;
+    }
+  
+    .locations div:nth-child(7) {
+      order: 8;
+    }
+  
+    .locations div:nth-child(8) {
+      order: 7;
+    }
+  
+    .contact3 div:nth-child(1) {
+      grid-row-start: span 1;
+      grid-column-start: span 1;
+    }
+  
+    .container {
+      padding: 5px;
+    }
+  
+    .employers {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .employers div {
+      padding: 20px;
+    }
+  
+    .projects3-item:nth-child(6) {
+      grid-row-start: span 1;
+      grid-column-start: span 1;
+    }
+  
+    .projects3-item:nth-child(9) {
+      grid-row-start: span 1;
+      grid-column-start: span 1;
+    }
+  }
+  
+  @media all and (min-width: 500px) and (max-width: 750px) {
+    .locations,
+    .projects3 {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .contact3 div:nth-child(1) {
+      grid-row-start: span 1;
+      grid-column-start: span 1;
+    }
+  
+    .contact3 {
+      grid-template-columns: 1fr;
+    }
+  
+    .profile {
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+    }
+  
+    .projects3-item:nth-child(6) {
+      grid-row-start: span 1;
+      grid-column-start: span 1;
+      order: 7;
+    }
+  
+    .projects3-item:nth-child(9) {
+      grid-row-start: span 1;
+      grid-column-start: span 1;
+    }
+  }
+  
+  @media all and (max-width: 750px) {
+    .contact3,
+    .locations,
+    .projects3 {
+      grid-column: auto/auto;
+      grid-row: auto/auto;
+    }
+  
+    h1 {
+      font-size: 18px;
+    }
+  
+    h2 {
+      font-size: 16px;
+    }
+  
+    h3 {
+      font-size: 14px;
+    }
+  }
+  
