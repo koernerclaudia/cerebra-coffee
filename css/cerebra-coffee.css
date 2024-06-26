@@ -22,7 +22,7 @@
     background-color: var(--cerebra-background-dark);
     color: var(--text-color);
     font-family: "Inter", sans-serif;
-    font-size: 20px;
+    /* font-size: 20px; */
     font-weight: 300;
     /* font-size: smaller; */
     line-height: 1.4;
@@ -197,17 +197,19 @@
   }
 
   .green_img img {
-    max-width: 450px;
+    max-width: 100%;
     border-radius: var(--border-radius);
   }
 
   .box-body-text {
     text-align: left;
     padding-bottom: 50px;
+    font-size: 20px;
   }
   .box-extra-text {
     font-family: "Roboto Mono";
     text-align: left;
+    font-size: 20px;
   }
 
   
@@ -219,7 +221,7 @@
    
   }
   
-  .profile img {
+  /* .profile img {
     max-height: 200px;
     min-width: 100px;
     text-align: center;
@@ -240,7 +242,7 @@
     text-align: center;
     flex-grow: 1;
     padding: 20px;
-  }
+  } */
   
   /* .current3 {
     display: grid;
@@ -462,15 +464,15 @@
     }
   }
   
-  .sun {
+  /* .sun {
     animation-duration: 4s;
     animation-name: color-change;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-timing-function: linear;
-  }
+  } */
   
-  @keyframes cloud-move {
+  /* @keyframes cloud-move {
     from {
       transform: translate(0, 50px);
     }
@@ -504,116 +506,85 @@
   
   .cloud-back {
     animation: 20s cloud-move-reverse infinite alternate linear;
-  }
+  } */
   
   /* MEDIA QUERIES */
 
    /* MOBILE DEVICES */
   @media all and (max-width: 500px) {
-    .contact3,
-    .locations,
-    .projects3,
-    .profile
-    .green_box
-    /* .current3  */ {
-      grid-template-columns: 1fr;
-    }
-  
-    .profile div:nth-child(2) {
-      order: 1;
-    }
-  
-    .locations div:nth-child(1) {
-      order: 1;
-    }
-  
-    .locations div:nth-child(2) {
-      order: 2;
-    }
-  
-    .locations div:nth-child(3) {
-      order: 4;
-    }
-  
-    .locations div:nth-child(4) {
-      order: 3;
-    }
-  
-    .locations div:nth-child(5) {
-      order: 5;
-    }
-  
-    .locations div:nth-child(6) {
-      order: 6;
-    }
-  
-    .locations div:nth-child(7) {
-      order: 8;
-    }
-  
-    .locations div:nth-child(8) {
-      order: 7;
-    }
-  
-    .contact3 div:nth-child(1) {
-      grid-row-start: span 1;
-      grid-column-start: span 1;
-    }
-  
     .container {
-      padding: 5px;
-    }
+        margin: 25px 15px;
+       }
+
+    .green_box {
+        display: grid;
+        flex-direction: column;
+        grid-template-columns: 1fr;
+        grid-gap: 15px;
+      }
   
-    .employers {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-    }
-  
-    .employers div {
-      padding: 20px;
-    }
-  
-    .projects3-item:nth-child(6) {
+      .box-body-text {
+        text-align: left;
+        padding-bottom: 20px;
+        font-size: 14px;
+      }
+      .box-extra-text {
+        font-family: "Roboto Mono";
+        text-align: left;
+        font-size: 14px;
+      }
+
+    /* .projects3-item:nth-child(6) {
       grid-row-start: span 1;
       grid-column-start: span 1;
+      order: 7;
     }
   
     .projects3-item:nth-child(9) {
       grid-row-start: span 1;
       grid-column-start: span 1;
-    }
+    } */
+
+    h1 {
+        font-size: 20px;
+        text-align: center;
+      }
+    
+      h2 {
+        font-size: 18px;
+      }
+    
+      h3 {
+        font-size: 12px;
+      }
   }
   
    /* MOBILE + TABLET */
 
-  @media all and (min-width: 500px) and (max-width: 750px) {
-    .locations,
-    .projects3 {
-      grid-template-columns: 1fr 1fr;
-    }
-  
-    .contact3 div:nth-child(1) {
-      grid-row-start: span 1;
-      grid-column-start: span 1;
-    }
-  
-    .contact3 {
-      grid-template-columns: 1fr;
-    }
-  
-    .profile {
-      grid-template-columns: 1fr 1fr;
-      grid-gap: 20px;
-    }
+   @media all and (min-width: 500px) and (max-width: 880px) {
+    .container {
+        margin: 25px 15px;
+       }
 
     .green_box {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 25px;
     }
+      }
   
-    .projects3-item:nth-child(6) {
+      .box-body-text {
+        text-align: left;
+        padding-bottom: 30px;
+        font-size: 16px;
+      }
+      .box-extra-text {
+        font-family: "Roboto Mono";
+        text-align: left;
+        font-size: 16px;
+      }
+
+    /* .projects3-item:nth-child(6) {
       grid-row-start: span 1;
       grid-column-start: span 1;
       order: 7;
@@ -622,13 +593,28 @@
     .projects3-item:nth-child(9) {
       grid-row-start: span 1;
       grid-column-start: span 1;
-    }
+    } */
+
+    h1 {
+        font-size: 36px;
+      }
+    
+      h2 {
+        font-size: 28px;
+      }
+    
+      h3 {
+        font-size: 20px;
+      }
   }
   
-  @media all and (min-width: 750px) and (max-width: 1000px) {
-    .contact3,
-    .locations,
-    .projects3 {
+  @media all and (min-width: 880px) and (max-width: 1000px) {
+   .container {
+    margin: 25px 15px;
+   }
+   
+   .green_box,
+   .green_img {
       grid-column: auto/auto;
       grid-row: auto/auto;
     }
