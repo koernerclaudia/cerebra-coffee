@@ -17,102 +17,79 @@
     href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet">
     <!-- Font Roboto Mono -->
-    <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <!-- Font: Montserrat-Light -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- Font: Montserrat-Light-Cerebra-E -->
-    <link rel="stylesheet" type="text/css" href="/fonts/Montserrat-Light.css">
-    <link rel="stylesheet" type="text/css" href="/css/cerebra-coffee.css">
+    <link rel="stylesheet" type="text/css" href="fonts/Montserrat-Light.css">
+    <link rel="stylesheet" type="text/css" href="css/cerebra-coffee.css">
     <!-- FavIcon assigned = image shown on browser tab -->
   <link href="img/fav-dragonfly.png" rel="shortcut icon">
+  <script src="js/typewriter.js"></script>
 </head>
 
 <body>
   <!-- This is a HTML comment; it won’t be visible in the browser -->
   <header class="page-header">
-    <img src="svg/cerebra-coffee-logo.svg" width="100px" alt="Cerebra Coffee Logo - a hand holding a steaming coffee mug and some decorative flowers"
-      class="page-header__item">
+    <div><img src="svg/cerebra-coffee-logo.svg" height="100px" alt="Cerebra Coffee Logo - a hand holding a steaming coffee mug and some decorative flowers"
+      class="page-header__item"></div>
+      <!-- <div class="typewriter">
+        <div class="typewriter-text"></div>
+      </div> -->
     <nav class="page-header__item">
       <ul role="menubar" class="navigation-list">
         <li role="presentation">
-          <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
+          <a href="index.html" role="menuitem" class="button__black">Home</a>
         </li>
         <li role="presentation">
-          <a href="about.html" role="menuitem" class="navigation-list__item">Speisekarte</a>
+          <a href="about.html" role="menuitem" class="button">Speisekarte</a>
         </li>
         <li role="presentation">
-          <a href="work.html" role="menuitem" class="navigation-list__item">Kuchen &nbsp; Torten</a>
+          <a href="work.html" role="menuitem" class="button">Kuchen &amp; Torten</a>
         </li>
         <li role="presentation">
-          <a href="contact.html" role="menuitem" class="navigation-list__item">Bestellung</a>
+          <a href="contact.html" role="menuitem" class="button__secondary">Bestellung</a>
         </li>
       </ul>
     </nav>
   </header>
+
+   <!-- Section: Headline -->
+<section class="headline">
+  <div><img src="svg/cerebra-coffee-wordmark.svg" /></div>
+</section>
+
+<section class="container_menu">
+  <div class="menu_box">
+  <div class="menu_rubrik">
+    <iframe id="softr-05eb0ad7-7c39-4434-8271-ae166f83c306-kaffee-karte" src="https://scott4010.softr.app/embed/pages/05eb0ad7-7c39-4434-8271-ae166f83c306/blocks/kaffee-karte" width="100%" height="1000" scrolling="no" frameborder="0" style="border:none;"></iframe>    <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.2.11/iframeResizer.min.js"></script>    <script> iFrameResize({ checkOrigin: false, log: true }, '#softr-05eb0ad7-7c39-4434-8271-ae166f83c306-kaffee-karte');</script>
+</div>
+<div class="menu_rubrik"><iframe id="softr-05eb0ad7-7c39-4434-8271-ae166f83c306-heiss-karte" src="https://scott4010.softr.app/embed/pages/05eb0ad7-7c39-4434-8271-ae166f83c306/blocks/heiss-karte" width="100%" height="1000" scrolling="no" frameborder="0" style="border:none;"></iframe>    <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.2.11/iframeResizer.min.js"></script>    <script> iFrameResize({ checkOrigin: false, log: true }, '#softr-05eb0ad7-7c39-4434-8271-ae166f83c306-heiss-karte');</script>
+</div></div>
+</section>
+
   <!-- Section: Profile -->
   <section class="container">
     <div class="green_box">
+    <div class="green_img"></div>
+    <div class="green_text">
+     </div>
+    </div>
+
+  </section>
+
+  <section class="container">
+    <div class="green_box">
+    <div class="green_text">
+      <h1>L<span class="e">e</span>ck<span class="e">e</span>r Kaffee in Kreuzberg!</h1>
+      <p>Ob morgendliche Dosis Koffein, Brunch, Mittagspause oder Käffchen während der Gassi-Runde - wir sind für euch da!</p>
+      <div class="roboto-mono"><b>Geöffnet:</b><br>
+        Mo - Fr 9-17 Uhr <br>Sa - So 10-17 Uhr</div>
+    </div>
     <div class="green_img"><img src="/img/espress-making.jpg"/></div>
-    <div class="green_text"><h1>Lecker Kaffee in Kreuzberg!</h1><p>Text here</p></div>
   </div>
   </section>
-  <section class="container">
-    <div><div class="img"><iframe id="softr-3d1be229-907a-432e-8fdc-360a6e53be03-heiss-karte" src="https://cerebracoffee.softr.app/embed/pages/3d1be229-907a-432e-8fdc-360a6e53be03/blocks/heiss-karte" width="50%" height="1000" scrolling="no" frameborder="0" style="border:none;"></iframe>    <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.2.11/iframeResizer.min.js"></script>    <script> iFrameResize({ checkOrigin: false, log: true }, '#softr-3d1be229-907a-432e-8fdc-360a6e53be03-heiss-karte');</script></div></div>
-    <div class="green_img"></div>
-  </section>
-
-  <section class="container">
-    <div class="profile">
-      <div><img class="profile__portrait" src="img/photo-of-Claudia.jpg" alt="A picture of Claudia"></div>
-      <div>
-        <h1>Hello World</h1>
-        <p>My Name is Claudia Koerner.</p>
-        <p>I am a <span class="special-text"> &lt;web&gt;</span> developer from Berlin.</p>
-        <a href="#">Check out some of my code</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="container">
-    <div class="profile">
-      <div>
-        <h1>Administrator</h1>
-        <div class="profile-img__center"><img src="SVGs/assistant.svg" alt="Image of an Executive Assistant"></div>
-        <br>I spent 20 years as an Executive Assistant. I finally decided to follow my passion for a more creative
-        career. I got certified as a Web Designer in 2007. Since then, I've dabbled with HTML and CSS. I also learned a
-        bit of
-        Javascript.
-      </div>
-      <div>
-        <h1>Creative Background</h1>
-        <div class="profile-img__center"><img src="SVGs/designer.svg" alt="Image of a Designer"></div>
-        <br> But now is the time to dive deeper into the career of a developer. In all my
-        admin-heavy roles, I managed to inject some of my creativity and web experience into my tasks. I also took on
-        projects that
-        allowed me to live out this need for working with visual design.
-      </div>
-    </div>
-  </section>
-
-  <section class="container">
-    <div>
-      <h1>Previous employers</h1>
-    </div>
-    <div class="employers">
-      <div class="company-logo"><a href="https://atlanticlabs.de" target="_blank">
-          <img src="img/atlanticlabs.svg" alt="Atlantic Labs"></a></div>
-      <div class="company-logo"><a href="https://contentful.com" target="_blank">
-          <img src="img/contentful.png" alt="Contentful"></a></div>
-      <div class="company-logo"><a href="https://soundcloud.com" target="_blank">
-          <img src="img/soundcloud.png" alt="SoundCloud"></a></div>
-      <div class="company-logo"><img src="img/juke.png" alt="Juke GmbH"></div>
-      <div class="company-logo"><img src="img/247.png" alt="24-7 Entertainment GmbH"></div>
-      <div class="company-logo"><a href="https://lcmenergy.com" target="_blank">
-          <img src="img/lcm.png" alt="LCM Oil & Gas"></a></div>
-    </div>
-  </section>
+  
   <footer class="page-footer">
     <p>Find me on</p>
     <div class="social-media">
