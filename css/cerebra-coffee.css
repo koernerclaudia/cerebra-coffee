@@ -1,13 +1,17 @@
 :root {
     --cerebra-green: #4D635E;
     --cerebra-background-dark: #292929;
+    --cerebra-beige: #FBF0E3;
+    --cerebra-brown: #6E5F4F;
 
     /* --primary-link-color: #fff;
     --secondary-link-color: #f0dcfe;
     --box-color: #afe1f3; */
     --text-color: #ffffff;
-    --max-box-width: 800px;
+    --max-box-width: 1000px;
+    --max-green-box: 320px;
     --border-radius: 20px;
+    --radius-button: 50px;
   }
   
   * {
@@ -18,6 +22,7 @@
     background-color: var(--cerebra-background-dark);
     color: var(--text-color);
     font-family: "Inter", sans-serif;
+    font-size: 20px;
     font-weight: 300;
     /* font-size: smaller; */
     line-height: 1.4;
@@ -28,23 +33,37 @@
   h1,
   h2,
   h3 { 
-    font-family: "Aclonica";
+    font-family: "Montserrat Light";
     color: var(--primary-color);
     line-height: 1.2;
-    text-align: center;
-    font-weight: 600;
+    text-align: left;
+    font-weight: 300;
   }
   
   h1 {
-    font-size: 24px;
+    font-size: 50px;
+    margin-top: 0;
+   
   }
   
   h2 {
-    font-size: 20px;
+    font-size: 40px;
   }
   
   h3 {
-    font-size: 16px;
+    font-size: 30px;
+  }
+
+  .roboto-mono {
+    font-family: Roboto Mono;
+  }
+
+  .e {
+    font-family: "Montserrat Light";
+  }
+
+  p {
+    margin: 10px auto 25px auto;
   }
   
   a {
@@ -54,23 +73,41 @@
   
   a:visited {
     color: var(--primary-link-color);
-    text-decoration: underline;
+    /* text-decoration: underline; */
   }
   
   a:hover,
   a:focus {
     /* Hover state - focus takes care of highlighting when someone uses keyboard to navigate */
     color: var(--secondary-link-color);
-    text-decoration: underline;
-    transition: ease-in 0.5s;
+    /* text-decoration: underline; */
+    transition: ease-in 0.3s;
   }
   
   a:active {
     /* selected link, current page */
     color: var(--secondary-link-color);
-    text-decoration: underline;
+    /* text-decoration: underline; */
   }
   
+  .typewriter {
+    font-family: "Roboto Mono", monospace;
+    color: white;
+    font-size: 18px;;
+    /* border-right: 0.15em solid orange; */
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: orange; }
+}
+
+.typewriter-text {
+    animation: blink-caret 0.75s step-end infinite;
+}
   .company.logo {
     width: auto;
     text-align: center;
@@ -88,8 +125,11 @@
     opacity: 0.6;
   }
   
+
+
   .page-header {
     display: flex;
+    flex-direction: row;
     max-width: var(--max-box-width);
     padding: 10px;
     margin: 0 auto;
@@ -110,7 +150,7 @@
   
   .navigation-list li {
     display: inline-block;
-    margin-left: 15px;
+    margin-left: 5px;
   }
   
   .navigation-list__item--active {
@@ -130,26 +170,53 @@
   .container {
     max-width: var(--max-box-width);
     min-width: 280px;
+    height: auto;
     margin: 25px auto 25px auto;
     background-color: var(--cerebra-green);
     border-radius: var(--border-radius);
-    padding: 20px;
+    padding: 30px;
     /* box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.3); */
   }
 
-  .green_right, 
-  .green_left
+  .headline {
+    max-width: var(--max-box-width);
+    min-width: 280px;
+    height: auto;
+    margin: auto;
 
-  .green_right, 
-  .green_left img {
+  }
+
+  .green_img 
+  .green_text {
+    display: grid;
+    flex-direction: column;
+    max-width: var(--max-green-box);
+    min-width: 150px;
+    height: auto;
+    
+  }
+
+  .green_img img {
+    max-width: 450px;
     border-radius: var(--border-radius);
   }
+
+  .box-body-text {
+    text-align: left;
+    padding-bottom: 50px;
+  }
+  .box-extra-text {
+    font-family: "Roboto Mono";
+    text-align: left;
+  }
+
   
   /* ---------------- GRIDS ------------------ */
-  .profile {
+  .green_box {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+    grid-gap: 25px;
+   
   }
   
   .profile img {
@@ -253,43 +320,54 @@
   
   button,
   .button {
-    /* overwrites browser defaults and resets the border */
+  
     border: none;
-    min-width: 180px;
-  
-    /* takes the font from the outer container */
+    min-width: 80px;
     font-family: inherit;
-    font-size: inherit;
-  
-    /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-    background-color: var(--primary-color);
-    color: var(--primary-link-color);
+    font-size: smaller;
+    background-color: var(--cerebra-green);
+    color: var(--text-color);
     text-decoration: none;
-  
-    /* adds spacing to the button (this will be discussed more in-depth later) */
     padding: 10px 15px;
-    border-radius: var(--border-radius);
-  
-    /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
-    border-bottom: 2px solid rgba(136, 51, 255, 0.3);
-    transition-duration: 0.5s;
-    transition-property: opacity;
+    border-radius: var(--radius-button);
   }
-  
+
+  .button__secondary {
+    border: none;
+    min-width: 80px;
+    font-family: inherit;
+    font-size: smaller;
+    background-color: var(--cerebra-brown);
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: var(--radius-button);
+  }
+
+  .button__black {
+    border: none;
+    min-width: 80px;
+    font-family: inherit;
+    font-size: smaller;
+    background-color: var(--cerebra-background-dark);
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: var(--radius-button);
+  }
+
   button:hover,
   button:focus,
   .button:hover,
-  .button:focus {
-    /* lets the mouse appear as a hand when hovering over the button */
+  .button:focus,
+  .button__secondary:hover,
+  .button__secondary:focus,
+  .button__black:hover,
+  .button__black:focus {
     cursor: pointer;
-  
-    /* reduces the opacity of the button to 80% */
-    opacity: 0.6;
-  }
-  
-  .button__secondary {
-    background-color: var(--secondary-color);
-    color: var(--primary-link-color);
+    background-color: var(--cerebra-beige);
+    color: var(--cerebra-background-dark);
+    transition: ease-in 0.3s;
   }
   
   .special-text {
@@ -506,7 +584,7 @@
     }
   }
   
-  @media all and (min-width: 500px) and (max-width: 750px) {
+  @media all and (min-width: 500px) and (max-width: 1000px) {
     .locations,
     .projects3 {
       grid-template-columns: 1fr 1fr;
@@ -538,7 +616,7 @@
     }
   }
   
-  @media all and (max-width: 750px) {
+  @media all and (max-width: 1000px) {
     .contact3,
     .locations,
     .projects3 {
@@ -547,15 +625,15 @@
     }
   
     h1 {
-      font-size: 18px;
+      font-size: 42px;
     }
   
     h2 {
-      font-size: 16px;
+      font-size: 30px;
     }
   
     h3 {
-      font-size: 14px;
+      font-size: 26px;
     }
   }
   
