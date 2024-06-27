@@ -22,36 +22,41 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- Font: Montserrat-Light-Cerebra-E -->
     <link rel="stylesheet" type="text/css" href="fonts/Montserrat-Light.css">
+    <link rel="stylesheet" type="text/css" href="css/navbar.css">
     <link rel="stylesheet" type="text/css" href="css/cerebra-coffee.css">
+  
     <!-- FavIcon assigned = image shown on browser tab -->
-  <link href="img/fav-dragonfly.png" rel="shortcut icon">
+  <link href="#" rel="shortcut icon">
+ 
   <script src="js/typewriter.js"></script>
+
 </head>
 
 <body>
   <!-- This is a HTML comment; it won’t be visible in the browser -->
-  <header class="page-header">
-    <div><img src="svg/cerebra-coffee-logo.svg" height="100px" alt="Cerebra Coffee Logo - a hand holding a steaming coffee mug and some decorative flowers"
-      class="page-header__item"/></div>
-      <!-- <div class="typewriter">
-        <div class="typewriter-text"></div>
-      </div> -->
-    <nav class="page-header__item">
-      <ul role="menubar" class="navigation-list">
-        <li role="presentation">
-          <a href="index.html" role="menuitem" class="button__black">Home</a>
-        </li>
-        <li role="presentation">
-          <a href="about.html" role="menuitem" class="button">Speisekarte</a>
-        </li>
-        <li role="presentation">
-          <a href="work.html" role="menuitem" class="button">Kuchen &amp; Torten</a>
-        </li>
-        <li role="presentation">
-          <a href="contact.html" role="menuitem" class="button__secondary">Bestellung</a>
-        </li>
-      </ul>
-    </nav>
+  <header>
+  <nav class="navbar">
+    <a href="#" class="nav-branding"><img src="svg/cerebra-coffee-logo.svg" height="100px" alt="Cerebra Coffee Logo - a hand holding a steaming coffee mug and some decorative flowers"/></a>
+    <ul class="nav-menu">
+      <li class="nav-item">
+        <a class="button__black" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="button" href="speisekarte.html" >Speisekarte</a>
+      </li>
+      <li class="nav-item">
+        <a class="button" href="speisekarte.html" >Kuchen &amp; Torten</a>
+      </li>
+      <li class="nav-item">
+        <a class="button__secondary" href="speisekarte.html" >Bestellung</a>
+      </li>
+    </ul>
+    <div class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </nav>
   </header>
 
    <!-- Section: Headline -->
@@ -74,14 +79,17 @@
   <section class="container">
     <div class="green_box">
     <div class="green_text">
-      <h1>L<span class="e">e</span>ck<span class="e">e</span>r Kaffee in Kreuzberg!</h1>
-      <p>Ob morgendliche Dosis Koffein, Brunch, Mittagspause oder Käffchen während der Gassi-Runde - wir sind für euch da!</p>
-      <div class="roboto-mono"><b>Geöffnet:</b><br>
-        Mo - Fr 9-17 Uhr <br>Sa - So 10-17 Uhr</div>
+      <h1>Lecker Kaffee in Kreuzberg!</h1>
+      <div class="box-body-text">Ob morgendliche Dosis Koffein, Brunch, Mittagspause oder Käffchen während der Gassi-Runde - wir sind für euch da!</div>
+      <div class="box-button">
+            <a href="index.html" role="menuitem" class="button__black">Mehr erfahren</a>
+            <a href="about.html" role="menuitem" class="button__black">Kontaktformular</a>
+         </div>
     </div>
-    <div class="green_img"><img src="/img/espress-making.jpg"/></div>
+    <div class="green_img"><img src="img/espress-making.jpg"/></div>
   </div>
   </section>
+
   
   <footer class="page-footer">
     <p>Find me on</p>
@@ -93,6 +101,7 @@
       <a href="#">Back to top</a>
     </div>
   </footer>
+  <script src="js/hamburger.js"></script>
   <script src="js/tota11y.min.js"></script>
 </body>
 
