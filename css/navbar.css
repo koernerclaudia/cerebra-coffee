@@ -92,8 +92,9 @@ a {
   .nav-menu {
     position: fixed;
     left: -100%;
-    top: 70px;
-    gap: 0;
+    top: 90px;
+    gap: 10px;
+    padding-bottom: 50px;
     flex-direction: column;
     background-color: #292929;
     width: 100%;
