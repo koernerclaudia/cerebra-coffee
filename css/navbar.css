@@ -38,11 +38,20 @@ a {
   padding: 0 24px;
 }
 
-.nav-menu {
+.nav-menu  {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 20px;
+}
+
+.page-footer {
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: var(--primary-link-color);
+  margin-bottom: 30px;
 }
 
 .nav-branding {
@@ -110,4 +119,5 @@ a {
   .nav-menu.active {
     left: 0;
   }
+
 }

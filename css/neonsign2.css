@@ -1,0 +1,32 @@
+
+  
+  .neon{
+    font-family: 'Montserrat';
+    font-size: 7.5rem;
+    color: #ba47cf;
+    /* position: absolute;
+    top: 50%;
+    left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    font-weight: thin;
+    text-shadow: 1px 0px 4px #ffffff, 2px 0px 4px #ba47cf, 3px 0px 4px #ba47cf, 2px 0px 3px #ffffff, 2px 3px 12px #ffffff, 2px 0px 15px #5004dd, 5px 0px 125px, 20px 0vw 200px #ba47cf,40px 0vw 200px #ba47cf;
+   
+}
+  
+  .flicker-slow{
+    animation: flicker 6s linear infinite;
+  }
+  
+  .flicker-fast{
+    animation: flicker 4s linear infinite;
+  }
+  
+  @keyframes flicker {
+    0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+        //text-shadow: none;
+        opacity: .99;
+    }
+    20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+        opacity: 0.4;
+    }
+}
