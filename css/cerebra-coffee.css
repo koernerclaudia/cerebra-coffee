@@ -187,6 +187,7 @@
     .menu_rubrik {
       display: flex;
       flex-direction: column;
+      vertical-align: top;
       max-width: 100%;
       height: auto;
       background-color: var(--cerebra-green);
@@ -201,6 +202,8 @@
     }
 
     .menu_allergene {
+      display: flex;
+      flex-direction: column;
       max-width: 100%;
       height: auto;
       background-color: var(--cerebra-beige);
@@ -208,8 +211,6 @@
       padding: 5px 10px 5px 10px;
       margin-bottom: 15px;
       color:var(--cerebra-background-dark);
-      display: flex;
-      flex-direction: column;
       align-items: center;
   
       /* box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.3); */
@@ -294,11 +295,26 @@
   
   /* MEDIA QUERIES */
 
+  /* SPEISEKARTE */   
+   
+  @media all and (max-width: 500px) {
+    .menu_box-3 {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+
+  @media all and (min-width: 500px) and (max-width: 1000px) {
+      .menu_box-3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+  }
+
    /* MOBILE DEVICES */
   
    @media all and (max-width: 500px) {
     
-
     .green_box {
         display: grid;
         flex-direction: column;
@@ -329,13 +345,6 @@
       h3 {
         font-size: 12px;
       }
-
-      .menu_box, .menu_box-3 {
-      display: flex;
-       flex-direction: column;
-      }
-  
-   /* MOBILE + TABLET */
 
    @media all and (min-width: 500px) and (max-width: 768px) {
   
@@ -369,6 +378,7 @@
         font-size: 20px;
       }
 
+     
 
   @media all and (min-width: 768px) and (max-width:1150px) {
 
@@ -426,5 +436,4 @@
       
       }
     }
-      }
-    
+  }}
