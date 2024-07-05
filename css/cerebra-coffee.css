@@ -330,7 +330,7 @@
         font-size: 12px;
       }
 
-      .menu_box {
+      .menu_box, .menu_box-3 {
       display: flex;
        flex-direction: column;
       }
