@@ -178,14 +178,26 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 30px;
   }
+
+  .menu_box-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+  }
     .menu_rubrik {
+      display: flex;
+      flex-direction: column;
       max-width: 100%;
       height: auto;
       background-color: var(--cerebra-green);
       border-radius: var(--border-radius);
-      padding: 10px;
-      margin-top: 15px;
+      padding: 5px 10px 5px 10px;
+      margin-bottom: 15px;
       /* box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.3); */
+    }
+
+    .menu-rubrik div {
+      background-color: var(--cerebra-green);
     }
 
     .menu_allergene {
@@ -194,7 +206,7 @@
       background-color: var(--cerebra-beige);
       border-radius: var(--border-radius);
       padding: 5px 10px 5px 10px;
-      margin-top: 15px;
+      margin-bottom: 15px;
       color:var(--cerebra-background-dark);
       display: flex;
       flex-direction: column;
@@ -285,9 +297,7 @@
    /* MOBILE DEVICES */
   
    @media all and (max-width: 500px) {
-    .container, .container_menu {
-        margin: 25px 15px;
-       }
+    
 
     .green_box {
         display: grid;
