@@ -1,34 +1,26 @@
-.container {
-    max-width: 1000px;
-    margin: auto;
-}
-
 .container div {
-    width: 340px;
-    /* height: 200px; */
+    width: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    /* border: 2px solid;
-    border-color: aliceblue; */
-    
-  }
-  
-  .container .item01 { height: 740px; }
-  .container .item02 { height: 580px; }
-  .container .item03 { height: 430px; }
-  .container .item04 { height: 200px; }
-  .container .item05 { height: 200px; }
-  .container .item06 { height: 420px; }
-  .container .item07 { height: 200px; }
-  .container .item08 { height: 640px; }
-  .container .item09 { height: 520px; }
-  .container .item10 { height: 200px; }
-  .container .item11 { height: 570px; }
-  .container .item12 { height: 200px; }
-  .container .item13 { height: 680px; }
-  .container .item14 { height: 300px; }
-  .container .item15 { height: 300px; }
-  .container .item16 { height: 300px; }
+}
+
+.container .item01 { height: 740px; order: 1; }
+.container .item02 { height: 580px; order: 2; }
+.container .item03 { height: 430px; order: 3; }
+.container .item04 { height: 200px; order: 4; }
+.container .item05 { height: 200px; order: 5; }
+.container .item06 { height: 420px; order: 6; }
+.container .item07 { height: 200px; order: 7; }
+.container .item08 { height: 640px; order: 8; }
+.container .item09 { height: 520px; order: 9; }
+.container .item10 { height: 200px; order: 10; }
+.container .item11 { height: 570px; order: 11; }
+.container .item12 { height: 200px; order: 12; }
+.container .item13 { height: 680px; order: 13; }
+.container .item14 { height: 300px; order: 14; }
+.container .item15 { height: 300px; order: 15; }
+.container .item16 { height: 300px; order: 16; }
+
 
