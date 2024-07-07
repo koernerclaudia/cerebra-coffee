@@ -1,0 +1,34 @@
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.container div {
+    width: 300px;
+    /* height: 200px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    /* border: 2px solid;
+    border-color: aliceblue; */
+    
+  }
+  
+  .container .item01 { height: 740px; }
+  .container .item02 { height: 580px; }
+  .container .item03 { height: 430px; }
+  .container .item04 { height: 200px; }
+  .container .item05 { height: 200px; }
+  .container .item06 { height: 420px; }
+  .container .item07 { height: 200px; }
+  .container .item08 { height: 640px; }
+  .container .item09 { height: 520px; }
+  .container .item10 { height: 200px; }
+  .container .item11 { height: 570px; }
+  .container .item12 { height: 200px; }
+  .container .item13 { height: 680px; }
+  .container .item14 { height: 300px; }
+  .container .item15 { height: 300px; }
+  .container .item16 { height: 300px; }
+
