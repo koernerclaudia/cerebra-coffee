@@ -4,7 +4,7 @@
     --cerebra-beige: #FBF0E3;
     --cerebra-brown: #6E5F4F;
     --text-color: #ffffff;
-    --max-box-width: 1100px;
+    --max-box-width: 1000px;
     --max-green-box: 320px;
     --border-radius: 20px;
     --radius-button: 50px;
@@ -32,26 +32,22 @@
   h2,
   h3 { 
     font-family: "Montserrat", sans-serif;
-    font-weight: 100;
     font-style: normal;
     color: var(--primary-color);
     line-height: 1.2;
-   
     font-weight: 300;
   }
   
   h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-top: 0;
    
   }
   
-  h2 {
-    font-size: 2rem;
-  }
+  h2 {font-size: 2rem;}
   
   h3 {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   .roboto-mono {
@@ -60,6 +56,10 @@
 
   .e {
     font-family: 'Montserrat-Light';
+  }
+
+  .center {
+    text-align: center;
   }
 
   p {
@@ -89,6 +89,12 @@
     color: var(--secondary-link-color);
     /* text-decoration: underline; */
   }
+
+  footer {
+      display: flex;
+      justify-content: space-between;
+    }
+  
   
 .iframe {
   background-color: #4D635E;
@@ -111,12 +117,23 @@
     animation: blink-caret 0.75s step-end infinite;
 }
   
-  .container {
+  .container_green {
     max-width: var(--max-box-width);
     min-width: 280px;
     height: auto;
     margin: 25px auto 40px auto;
     background-color: var(--cerebra-green);
+    border-radius: var(--border-radius);
+    padding: 30px;
+    /* box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.3); */
+  }
+
+  .container_transparent {
+    max-width: var(--max-box-width);
+    min-width: 280px;
+    height: auto;
+    margin: 25px auto 40px auto;
+    background-color: var(--cerebra-background-dark);
     border-radius: var(--border-radius);
     padding: 30px;
     /* box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.3); */
@@ -131,26 +148,39 @@
    line-height: normal;
   }
 
-  .green_img 
-  .green_text {
+  .green_img, 
+  .menu_img {
     display: grid;
     flex-direction: column;
     max-width: var(--max-green-box);
-    min-width: 150px;
     height: auto;
     
   }
 
-  .green_img img {
+  .menu_img {
+    margin-bottom: 35px;
+  }
+
+  .green_img, img {
     max-width: 100%;
     border-radius: var(--border-radius);
   }
 
   .box-body-text {
     text-align: left;
-    padding-bottom: 50px;
+    padding-bottom: 25px;
+    font-size: 1.2rem;
+    font-family: 'Inter';
+    font-weight: 200;
    
   }
+
+  .coffee-text {
+    text-align: left;
+    padding-top: 30px;
+   
+  }
+
   .box-extra-text {
     font-family: "Roboto Mono";
     text-align: left;
@@ -173,37 +203,37 @@
     padding: 0px;
     /* box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.3); */
   }
-  .menu_box {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 30px;
-  }
 
   .menu_box-3 {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr; */
+    column-count: 3;
+    align-items:flex-start;
+    grid-column-gap: 35px;
+    grid-row-gap: 10px;
+  }
+
+  .menu_box_kaffee {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 30px;
   }
+
     .menu_rubrik {
-      display: flex;
-      flex-direction: column;
-      vertical-align: top;
+      max-height: 100%;
       max-width: 100%;
-      height: auto;
       background-color: var(--cerebra-green);
       border-radius: var(--border-radius);
       padding: 5px 10px 5px 10px;
-      margin-bottom: 15px;
+      margin-bottom: 35px;
+      -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
       /* box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.3); */
     }
 
-    .menu-rubrik div {
-      background-color: var(--cerebra-green);
-    }
-
     .menu_allergene {
-      display: flex;
-      flex-direction: column;
+      /* display: flex;
+      flex-direction: column; */
       max-width: 100%;
       height: auto;
       background-color: var(--cerebra-beige);
@@ -215,6 +245,16 @@
   
       /* box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.3); */
     }
+
+    .menu-rubrik div {
+      background-color: var(--cerebra-green);
+      height: auto;
+    }
+
+     
+
+
+   
     
   /* ---------------- GRIDS ------------------ */
   .green_box {
@@ -345,6 +385,8 @@
       h3 {
         font-size: 12px;
       }
+
+      
 
    @media all and (min-width: 500px) and (max-width: 768px) {
   
