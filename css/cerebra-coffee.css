@@ -159,6 +159,7 @@
   .menu_img {
     max-height: 100%;
     max-width: 100%;
+    margin-bottom: 30px;
   }
 
   .green_img, img {
@@ -233,6 +234,7 @@
       -webkit-column-break-inside: avoid;
     page-break-inside: avoid;
     break-inside: avoid;
+    margin-bottom: 30px;
       /* box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.3); */
     }
 
