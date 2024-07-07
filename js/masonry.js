@@ -1,3 +1,5 @@
+let MagicGrid;
+
 document.addEventListener('DOMContentLoaded', function () {
     let cerebraMenu = new MagicGrid({
       container: '.container',
@@ -7,6 +9,6 @@ document.addEventListener('DOMContentLoaded', function () {
       static: true,
       useMin: true
     });
-  
+    
     cerebraMenu.listen();
   });
