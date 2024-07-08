@@ -25,7 +25,7 @@
 
 @media all and (max-width: 500px) {
     .container {
-        width: 300px !important;
+        width: 330px !important;
         margin: 15px !important;
     }
 }
