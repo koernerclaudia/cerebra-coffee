@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
         container: '.container',
         animate: true,
         items: 16,
-        gutter: 25,
+        gutter: 30,
         maxColumns: 3,
         useTransform: true,
         static: true,
