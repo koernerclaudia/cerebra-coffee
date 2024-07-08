@@ -1,0 +1,12 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 330px);
+    align-items: flex-start safe;
+    grid-column-gap: 10px;
+    grid-row-gap: 50px;
+  }
+  
+  .item {
+    background: black;
+    border-radius: 5px;
+  }

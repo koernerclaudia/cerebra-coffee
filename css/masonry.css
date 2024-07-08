@@ -22,3 +22,10 @@
 .container .item14 { height: 300px;  }
 .container .item15 { height: 300px;  }
 .container .item16 { height: 300px;  }
+
+@media all and (max-width: 500px) {
+    .container {
+        width: 300px !important;
+        margin: 15px !important;
+    }
+}
