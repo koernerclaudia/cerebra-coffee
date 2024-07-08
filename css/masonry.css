@@ -1,5 +1,5 @@
 .container div {
-    width: 350px !important;
+    width: 330px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,9 +23,3 @@
 .container .item15 { height: 300px;  }
 .container .item16 { height: 300px;  }
 
-@media all and (max-width: 500px) {
-    .container {
-        width: 330px !important;
-        margin: 15px !important;
-    }
-}
