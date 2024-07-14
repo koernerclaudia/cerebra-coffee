@@ -4,22 +4,81 @@
     justify-content: center;
     align-items: center;
     border-radius: 20px;
+    margin-bottom: 30px;
 }
 
 .container .item01 { height: 740px;  }
 .container .item02 { height: 580px;  }
 .container .item03 { height: 430px;  }
-.container .item04 { height: 200px;  }
-.container .item05 { height: 200px;  }
-.container .item06 { height: 420px;  }
-.container .item07 { height: 200px;  }
-.container .item08 { height: 640px;  }
-.container .item09 { height: 520px;  }
-.container .item10 { height: 200px;  }
-.container .item11 { height: 570px;  }
-.container .item12 { height: 200px;  }
-.container .item13 { height: 680px;  }
-.container .item14 { height: 300px;  }
-.container .item15 { height: 300px;  }
-.container .item16 { height: 300px;  }
+.container .item04 { height: 620px;  }
+.container .item05 { height: 840px;  }
+.container .item06 { height: 720px;  }
+.container .item07 { height: 770px;  }
+.container .item08 { height: 300px;  }
+.container .item09 { height: 880px;  }
+.container .item10 { height: auto;  }
+.container .item11 { height: auto;  }
 
+
+  .menu_rubrik {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-height: 100%;
+    max-width: 100%;
+    background-color: var(--cerebra-green);
+    border-radius: var(--border-radius);
+    padding: 15px;
+    -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
+  }
+
+  .menu_allergene {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 100%;
+    color: #292929;
+    background-color: #FBF0E3;
+    border-radius: var(--border-radius);
+    padding: 15px 35px;
+    -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 3px;
+}
+
+  .right-column {
+    text-align: left;
+    font-family: 'Inter', sans-serif; /* Change to your desired font */
+    font-size: small;
+    padding-left: 30px;
+}
+
+.left-column {
+    text-align: right ;
+    font-family: 'Roboto Mono', monospace ; /* Change to your desired font */
+    font-weight: bold;
+    font-size: smaller;
+    width: 30px;
+    
+}
