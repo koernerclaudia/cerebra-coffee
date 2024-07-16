@@ -83,13 +83,7 @@ a {
 
   }
 
-  @media all and (min-width:769px) and (max-width: 850px) {
-
-
-
-  }
-
-  @media all and (max-width:768px){
+  @media all and (max-width:1000px){
   .hamburger {
     display: block;
   }
@@ -116,6 +110,7 @@ a {
     width: 100%;
     text-align: center;
     transition: 0.3s;
+    z-index: 1;
   }
 
   .nav-item {
@@ -124,7 +119,7 @@ a {
   }
 
   .nav-menu.active {
-    left: 0;
+ left: 0;
   }
 
 }
