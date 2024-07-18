@@ -24,12 +24,13 @@
     <link rel="stylesheet" type="text/css" href="fonts/Montserrat-Light.css">
     <link rel="stylesheet" type="text/css" href="css/navbar.css">
     <link rel="stylesheet" type="text/css" href="css/cerebra-coffee.css">
-    <link rel="stylesheet" type="text/css" href="css/neonsign2.css">
+    <link rel="stylesheet" type="text/css" href="css/neontext.css">
   
     <!-- FavIcon assigned = image shown on browser tab -->
   <link href="#" rel="shortcut icon">
- 
+  <script src="https://kit.fontawesome.com/dbf39d3a22.js" crossorigin="anonymous"></script>
   <script src="js/typewriter.js"></script>
+  <script src="js/dateandtime.js"></script>
 
 </head>
 
@@ -39,6 +40,7 @@
       <nav class="navbar">
         <a href="#" class="nav-branding"><img src="svg/cerebra-coffee-logo.svg" height="100px"
             alt="Cerebra Coffee Logo - a hand holding a steaming coffee mug and some decorative flowers" /></a>
+            <div class="typewriter-text"></div>
         <ul class="nav-menu">
           <li class="nav-item">
             <a href="index.html">Home</a>
@@ -67,9 +69,8 @@
     <!-- Section: Headline -->
 
     <section>
-      <div class="headline">
-      <div class="neon" data-text="U">Ce<span class="flicker-slow">re</span>bra <span class="flicker-fast">Co</span>ffee</div>
-      </div></section>
+      <div class="headline"><h4 class="neonText">C<span class="e">e</span>r<span class="e">e</span>bra Coff<span class="e">ee</span></h4></div>
+    </section>
 
     <!-- Section: Profile -->
     <section class="container_green">
@@ -81,6 +82,7 @@
             Gassi-Runde - wir sind für euch da!</div>
           <div class="box-extra-text"><b>Geöffnet:</b><br>
             Mo - Fr 9-17 Uhr <br>Sa - So 10-17 Uhr</div>
+           
         </div>
       </div>
     </section>
@@ -89,8 +91,18 @@
 
     <section>
       <h1 class="center">Heute im Angebot</h1>
-      <p style="color: #ffffff" id="datetime" class="date-time-picker-holder"></p>
+      <div style="color: #ffffff" id="datetime" class="date-time-picker-holder"></div>
+      </section>
+      <section class="container_today">
       <iframe id="softr-c72a49cd-53cc-445a-a695-e3ae25039fe3-list1" src="https://cerebracoffee.softr.app/embed/pages/c72a49cd-53cc-445a-a695-e3ae25039fe3/blocks/list1" width="100%" height="auto" scrolling="no" frameborder="0" style="border:none;"></iframe>    <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.2.11/iframeResizer.min.js"></script>    <script> iFrameResize({ checkOrigin: false, log: true }, '#softr-c72a49cd-53cc-445a-a695-e3ae25039fe3-list1');</script>
+    </section>
+
+    <section>
+      <h1 class="center">Heute im Angebot</h1>
+      <!-- <div style="color: #ffffff" id="datetime" class="date-time-picker-holder"></div> -->
+      </section>
+      <section class="container_today">
+        <iframe id="softr-c72a49cd-53cc-445a-a695-e3ae25039fe3-list2" src="https://cerebracoffee.softr.app/embed/pages/c72a49cd-53cc-445a-a695-e3ae25039fe3/blocks/list2" width="100%" height="auto" scrolling="no" frameborder="0" style="border:none;"></iframe>    <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.2.11/iframeResizer.min.js"></script>    <script> iFrameResize({ checkOrigin: false, log: true }, '#softr-c72a49cd-53cc-445a-a695-e3ae25039fe3-list2');</script>
     </section>
 
     <section class="container_green">
@@ -108,7 +120,32 @@
        
        
          
-          <div class="coffee-text"> <h3>Lecksterstes Ergebnis.</h3><br>Das beste Ergebnis mit einer milden Säure und rundem Abgang.</div>
+          <div class="coffee-text"> <h3>Leckerstes<br>Ergebnis.</h3><br>Das beste Ergebnis mit einer milden Säure und rundem Abgang.</div>
+      </div>
+    </section>
+
+    <section class="container_transparent">
+      <h1 class="center">Unser Kaffee</h1>
+      <div class="menu_box_kaffee">
+       
+         
+          <div class="coffee-text_border"> <h3>Perfekt <br>geröstet.</h3><br>Unsere selbstkreirte Hausröstung ist die Mischung für den Liebhaber des klassischen
+            Kaffees mit ausgewogenem schokoladig-nussigen Geschmack. </div>
+       
+       
+          
+          <div class="coffee-text_border"><h3>Optimaler Mahlgrad.</h3><br>Die Einstellung des Mahlgrades, die Verteilung des gemahlenen Kaffee im Siebträger
+            und der stets gleichmäßige Druck beim tampen.</div>
+       
+       
+         
+          <div class="coffee-text_border"> <h3>Leckerstes<br>Ergebnis.</h3><br>Das beste Ergebnis mit einer milden Säure und rundem Abgang.</div>
+
+          <div class="coffee-text_green"><h3>Optimaler Mahlgrad.</h3><br>Die Einstellung des Mahlgrades, die Verteilung des gemahlenen Kaffee im Siebträger
+            und der stets gleichmäßige Druck beim tampen.</div>
+
+            <div class="coffee-text_green"><h3>Optimaler Mahlgrad.</h3><br>Die Einstellung des Mahlgrades, die Verteilung des gemahlenen Kaffee im Siebträger
+              und der stets gleichmäßige Druck beim tampen.</div>
       </div>
     </section>
 
@@ -117,10 +154,9 @@
       <div class="green_box">
         <div class="green_text">
           <h1>Brunch &amp; Lunch</h1>
-          <div class="box-body-text">...</div>
+          <div class="box-body-text">Wir servieren eine Vielfalt an Gerichten inklusive Suppen, Pasta, Pizza, verschiedene belegte Sandwiches - auch vegan.</div>
           <div class="box-button">
-            <a href="index.html" role="menuitem" class="button__black">Speisekarte</a>
-            <a href="about.html" role="menuitem" class="button__black">Catering</a>
+            <a href="speisekarte.html" role="menuitem" class="button__black">Speisekarte</a>
           </div>
         </div>
         <div class="green_img"><img src="img/Eier-Avocado.jpg" /></div>
@@ -133,11 +169,11 @@
         <div class="green_img"><img src="img/kuchen.jpg" /></div>
         <div class="green_text">
           <h1>Kuchen &amp; Torten</h1>
-          <div class="box-body-text">Jeden Tag frisch zubereitet! Für besondere Anlässe könnt ihr auch individuelle
+          <div class="box-body-text">Jeden Tag frisch zubereitet! <br><br>Für besondere Anlässe könnt ihr auch individuelle
             Torten, Kuchen andere Backwaren bei uns bestellen. </div>
           <div class="box-button">
-            <a href="index.html" role="menuitem" class="button__black">Mehr erfahren</a>
-            <a href="about.html" role="menuitem" class="button__black">Bestellung</a>
+            <a href="kuchen.html" role="menuitem" class="button__black">Mehr Infos</a>
+            <a href="bestellung.html" role="menuitem" class="button__black">Bestellung</a>
           </div>
         </div></div></section>
 
@@ -145,27 +181,31 @@
           <div class="green_box">
             <div class="green_text">
               <h1>Catering</h1>
-              <div class="box-body-text">...</div>
+              <div class="box-body-text">Unsere belegeten Produkte sowie ... liefern wir euch gerne für eure Veranstaltungen.</div>
               <div class="box-button">
-                <a href="index.html" role="menuitem" class="button__black">Speisekarte</a>
-                <a href="about.html" role="menuitem" class="button__black">Catering</a>
+                <a href="speisekarte.html" role="menuitem" class="button__black">Speisekarte</a>
+                <a href="catering.html" role="menuitem" class="button__black">Mehr Infos</a>
               </div></div>
               <div class="green_img"><img src="img/catering.png" alt="A photo of a bagel with salmon." title="Salmon Bagel" /></div>
             </div>
         </section>
+
+        <section class="container_green">Google Reviews</section>
 
         <section class="container_green">
           <div class="green_box">
               <div class="green_img"><img src="img/Kunst-im-Cerebra.png" /></div>
               <div class="green_text">
                 <h1>Kunst im Café</h1>
-                <div class="box-body-text">...</div>
+                <div class="box-body-text">Zurzeit könnt ihr Kunst von Anika Luisa Henkemeier an unseren Wänden bewundern und auch auf Anfrage kaufen. Preise dazu findet ihr <span class="rot">hier</span>.<br><br>Bei Interesse schreibt uns gerne an oder kommt vorbei um euch die Werke live anzusehen.</div>
                 <div class="box-button">
-                  <a href="index.html" role="menuitem" class="button__black">Künstlerin</a>
-                  <a href="index.html" role="menuitem" class="button__black">Anfrage</a>
+                  <a href="https://www.instagram.com/___nika_lu/" role="menuitem" class="button__black"><i class="fa-brands fa-instagram"></i> Künstler*in</a>
+                  <a href="index.html" role="menuitem" class="button__black">Kaufanfrage</a>
                 </div></div>
             </div>
         </section>
+
+        <section class="container_green">Instagram Feed</section>
 
         <footer>
           <div class="page-footer"></div>

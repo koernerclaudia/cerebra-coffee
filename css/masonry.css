@@ -10,14 +10,15 @@
 .container .item01 { height: 740px;  }
 .container .item02 { height: 580px;  }
 .container .item03 { height: 430px;  }
-.container .item04 { height: 620px;  }
+.container .item04 { height: 180px;  }
 .container .item05 { height: 840px;  }
-.container .item06 { height: 720px;  }
-.container .item07 { height: 770px;  }
-.container .item08 { height: 300px;  }
-.container .item09 { height: 880px;  }
-.container .item10 { height: auto;  }
+.container .item06 { height: 620px;  }
+.container .item07 { height: 720px;  }
+.container .item08 { height: 770px;  }
+.container .item09 { height: 300px;  }
+.container .item10 { height: 880px;  }
 .container .item11 { height: auto;  }
+.container .item12 { height: auto;  }
 
 
   .menu_rubrik {
@@ -39,7 +40,7 @@
        break-inside: avoid;
   }
 
-  .menu_allergene {
+  .menu_no-pic {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -47,16 +48,49 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    max-height: 100%;
     max-width: 100%;
-    color: #292929;
-    background-color: #FBF0E3;
+    background-color: var(--cerebra-green);
     border-radius: var(--border-radius);
-    padding: 15px 35px;
+    padding: 0px 15px 15px 15px;
     -webkit-column-break-inside: avoid;
   page-break-inside: avoid;
   -moz-column-break-inside: avoid;
        break-inside: avoid;
   }
+
+  .menu_allergene {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    color: #292929;
+    background-color: #FBF0E3;
+    border-radius: var(--border-radius);
+    padding: 25px 35px;
+    -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
+  }
+
+  .menu_milk {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    color: #ffffff;
+    background-color: var(--cerebra-green);
+    border-radius: var(--border-radius);
+    padding: 25px 35px 0px 35px;
+    -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
+  }
+
 
   table {
     width: 100%;
