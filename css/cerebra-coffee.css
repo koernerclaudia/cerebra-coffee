@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 :root {
   --cerebra-green: #4D635E;
   --cerebra-background-dark: #292929;
@@ -143,8 +150,10 @@ a:active {
   line-height: 1.6em;
     display: -webkit-box;
     display: -ms-flexbox;
+    display: -ms-grid;
     display: grid;
     grid-gap: 30px;
+    -ms-grid-columns: 3fr 30px 3fr 30px 4fr 30px 3fr 30px 3fr;
     grid-template-columns: 3fr 3fr 4fr 3fr 3fr;
 -webkit-box-pack: justify;
 -ms-flex-pack: justify;
@@ -286,7 +295,9 @@ background-color: #4D635E;
 }
 
 .coffee-text_border_blur {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 25px 2fr 25px 6fr;
   grid-template-columns: 1fr 2fr 6fr;
   grid-gap: 25px;
   text-align: left;
@@ -298,7 +309,8 @@ background-color: #4D635E;
   height: 100%;
   width: auto;
   background: rgba(255, 255, 255, 0.1); /* White background with 30% opacity */
-    backdrop-filter: blur(8px); /* Apply blur effect */
+    -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px); /* Apply blur effect */
  
 }
 
@@ -379,7 +391,9 @@ display: flex;
   -ms-grid-columns: 2fr 1fr;
   grid-template-columns: 2fr 1fr;
   grid-gap: 20px;
-  justify-content: space-evenly; 
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly; 
   padding-bottom: 20px;
 }
 
@@ -389,15 +403,22 @@ display: flex;
   -ms-grid-columns: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 30px;
-  justify-content: space-evenly; 
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly; 
   padding-bottom: 20px;
 }
 
   
 /* ---------------- GRIDS ------------------ */
 .green_box, .green_box_reverse {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   grid-gap: 35px;
  
 }
@@ -502,13 +523,23 @@ label {
   }
 
   .green_box {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
     }
 
     .green_box_reverse {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column-reverse;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+          -ms-flex-direction: column-reverse;
+              flex-direction: column-reverse;
     }
     
     .box-body-text {
@@ -540,7 +571,9 @@ label {
       display: grid;
       -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-      justify-content: space-evenly;
+      -webkit-box-pack: space-evenly;
+          -ms-flex-pack: space-evenly;
+              justify-content: space-evenly;
       
     }
 
@@ -564,8 +597,13 @@ label {
 
 
   .green_box, .green_box_reverse {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     grid-gap: 25px;
    
   }
@@ -604,8 +642,13 @@ label {
 
 
   .green_box, .green_box_reverse {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     grid-gap: 25px;
    
   }
