@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     const textElement = document.querySelector('.typewriter-text');
-    const texts = ["Täglich frisch!", "Hunde willkommen!", "Leckere Kuchen!", "Karte ab 5Euro!"];
+    const texts = ["Täglich frisch!", "Hunde willkommen!", "Leckere Kuchen!", "Karte ab 5 Euro!"];
     let textIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
