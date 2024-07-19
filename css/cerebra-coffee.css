@@ -225,7 +225,7 @@ background-color: #4D635E;
   min-width: 280px;
   height: auto;
   margin: 25px auto 40px auto;
-  background-image: url('/img/coffee-background.jpg');
+  background-image: url('../img/coffee-background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: var(--border-radius);
