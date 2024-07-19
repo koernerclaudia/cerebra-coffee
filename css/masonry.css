@@ -1,5 +1,5 @@
 .container div {
-    width: 320px;
+    width: min(320px, 100%);
     display: flex;
     justify-content: center;
     align-items: center;

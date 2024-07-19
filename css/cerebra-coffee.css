@@ -15,7 +15,35 @@
   --max-green-box: 320px;
   --border-radius: 20px;
   --radius-button: 50px;
+
+  --fs-xl: 2.6rem;
+  --fs-lg: 2rem;
+  --fs-m: 1.5rem;
+  --fs-s: 1rem; 
+  --fs-xs: 0.75rem;
+
 }
+
+  @media all and (min-width: 35em) and (max-width: 45em) {
+    :root {
+      --fs-xl: 2.4rem;
+      --fs-lg: 1.8rem;
+      --fs-m: 1.4rem;
+      --fs-s: 0.9rem; 
+      --fs-xs: 0.7rem;
+    }
+  }
+
+  @media all and (max-width: 35em) {
+    :root {
+      --fs-xl: 2rem;
+      --fs-lg: 1.7rem;
+      --fs-m: 1.3rem;
+      --fs-s: 0.8rem; 
+      --fs-xs: 0.6rem;
+    }
+  }
+
 * { -webkit-box-sizing: border-box; box-sizing: border-box;
 }
 body {
@@ -24,6 +52,7 @@ body {
   font-family: "Inter", sans-serif;
   font-weight: 300;
   line-height: 1.4;
+  font-size: var(--fs-s);
 }
 
 .rot {
@@ -49,15 +78,15 @@ h3 {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: var(--fs-xl);
   margin-top: 0;
  
 }
 
-h2 {font-size: 2rem;}
+h2 {font-size: var(--fs-l);}
 
 h3 {
-  font-size: 1.5rem;
+  font-size: var(--fs-m);
 }
 
 .roboto-mono {
@@ -110,7 +139,7 @@ a:active {
 .page_footer {
   font-family: "Inter", sans-serif;
   font-weight: 200;
-  font-size: small;
+  font-size: var(--fs-xs);
   line-height: 1.6em;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -133,14 +162,6 @@ max-width: var(--max-box-width);
 background-color: #4D635E;
 }
 
-.typewriter {
-  width: 200px;
-  font-family: "Roboto Mono", monospace;
-  color: white;
-  font-size: 18px;
-  /* border-right: 0.15em solid orange; */
-}
-
 @-webkit-keyframes blink-caret {
   from, to { border-color: transparent; }
   50% { border-color: orange; }
@@ -155,7 +176,7 @@ background-color: #4D635E;
   width: 200px;
   font-family: "Roboto Mono", monospace;
   color: white;
-  font-size: 18px;
+  font-size: var(--fs-s);
   -webkit-animation: blink-caret 0.75s step-end infinite;
           animation: blink-caret 0.75s step-end infinite;
 }
@@ -163,13 +184,13 @@ background-color: #4D635E;
 .date-time-picker-holder {
   font-family: "Roboto Mono", monospace;
   color: white;
-  font-size: 14px;
+  font-size: var(--fs-s);
   text-align: center;
 }
 
 .container_green {
   max-width: var(--max-box-width);
-  min-width: 280px;
+  width: 100%;
   height: auto;
   margin: 25px auto 40px auto;
   background-color: var(--cerebra-green);
@@ -199,6 +220,19 @@ background-color: #4D635E;
   /* box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.3); */
 }
 
+.container_coffee {
+  max-width: var(--max-box-width);
+  min-width: 280px;
+  height: auto;
+  margin: 25px auto 40px auto;
+  background-image: url('/img/coffee-background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: var(--border-radius);
+  padding: 30px;
+  /* box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.3); */
+}
+
 .headline {
   max-width: var(--max-box-width);
   min-width: 280px;
@@ -211,13 +245,15 @@ background-color: #4D635E;
 .green_img, img {
   max-width: 100%;
   border-radius: var(--border-radius);
-  height: 100%;
+  height: min()
+  
 }
 
 .box-body-text {
+  width: 100%;
   text-align: left;
   padding-bottom: 25px;
-  font-size: 1.2rem;
+  font-size: var(--fs-s);
   font-family: 'Inter';
   font-weight: 200;
  
@@ -246,6 +282,23 @@ background-color: #4D635E;
   height: 100%;
   width: auto;
   text-align: center;
+ 
+}
+
+.coffee-text_border_blur {
+  display: grid;
+  grid-template-columns: 1fr 2fr 6fr;
+  grid-gap: 25px;
+  text-align: left;
+  border-radius: var(--border-radius);
+  border: 1px solid;
+  border-color: var(--cerebra-green);
+  padding: 25px;
+  margin: 0 15px;
+  height: 100%;
+  width: auto;
+  background: rgba(255, 255, 255, 0.1); /* White background with 30% opacity */
+    backdrop-filter: blur(8px); /* Apply blur effect */
  
 }
 
@@ -320,6 +373,16 @@ display: flex;
         flex-direction: column;
 }
 
+.menu_box_kaffee1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 20px;
+  justify-content: space-evenly; 
+  padding-bottom: 20px;
+}
+
 .menu_box_kaffee {
   display: -ms-grid;
   display: grid;
@@ -335,22 +398,22 @@ display: flex;
 .green_box, .green_box_reverse {
   display: flex;
   flex-direction: row;
-  grid-gap: 25px;
+  grid-gap: 35px;
  
 }
 
 
 button,
 .button {
-
   font-family: 'Montserrat';
   border: none;
-  min-width: auto;
+  min-width: 50px;
   background-color: var(--cerebra-green);
   color: var(--text-color);
   text-decoration: none;
   padding: 10px 12px;
   border-radius: var(--radius-button);
+  font-size: var(--fs-s);
 }
 
 .button__secondary {
@@ -451,25 +514,25 @@ label {
     .box-body-text {
       text-align: left;
       padding-bottom: 20px;
-      font-size: 14px;
+      font-size: var(--fs-s);
     }
     .box-extra-text {
       font-family: "Roboto Mono";
       text-align: left;
-      font-size: 14px;
+      font-size: var(--fs-s);
     }
 
   h1 {
-      font-size: 1.5rem;
+      font-size: var(--fs-xl);
       text-align: center;
     }
   
     h2 {
-      font-size: 18px;
+      font-size: var(--fs-lg);
     }
   
     h3 {
-      font-size: 12px;
+      font-size: var(--fs-m);
     }
 
     .menu_box_kaffee {
@@ -510,29 +573,29 @@ label {
     .box-body-text {
       text-align: left;
       padding-bottom: 30px;
-      font-size: 12px;
+      font-size: var(--fs-s);
     }
     .box-extra-text {
       font-family: "Roboto Mono";
       text-align: left;
-      font-size: 12px;
+      font-size: var(--fs-s);
     }
 
-    .green_img {
+    /* .green_img {
       width: 100%;
       height: 100%;
-    }
+    } */
 
   h1 {
-      font-size: 2.5rem;
+      font-size: var(--fs-xl);
     }
   
     h2 {
-      font-size: 28px;
+      font-size: var(--fs-lg);
     }
   
     h3 {
-      font-size: 20px;
+      font-size: var(--fs-m);
     }
 
    
@@ -552,32 +615,32 @@ label {
     grid-row: auto/auto;
   } */
 
-  .green_img {
+  /* .green_img {
     width: 100%;
     height: 100%;
-  }
+  } */
 
   h1 {
-    font-size: 3rem;
+    font-size: var(--fs-xl);
   }
 
   h2 {
-    font-size: 40px;
+    font-size: var(--fs-lg);
   }
 
   h3 {
-    font-size: 30px;
+    font-size: var(--fs-m);
   }
 
   .box-body-text {
     text-align: left;
     padding-bottom: 20px;
-    font-size: 22px;
+    font-size: var(--fs-s);
   }
   .box-extra-text {
     font-family: "Roboto Mono";
     text-align: left;
-    font-size: 22px;
+    font-size: var(--fs-s);
   }
   
     .hamburger {
@@ -600,4 +663,3 @@ label {
     }
   }
     }
-  
