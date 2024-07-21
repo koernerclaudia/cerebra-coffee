@@ -65,7 +65,7 @@ body {
   background-color: var(--cerebra-background-dark);
   color: var(--text-color);
   font-family: "Inter", sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   line-height: 1.4;
   font-size: var(--fs-s);
 }
@@ -89,7 +89,7 @@ h3 {
   font-style: normal;
   color: var(--primary-color);
   line-height: 1.2;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 h1 {
@@ -155,7 +155,7 @@ a:active {
 
 .page_footer {
   font-family: "Inter", sans-serif;
-  font-weight: 200;
+  font-weight: 100;
   font-size: var(--fs-s);
   line-height: 1.6em;
   display: -webkit-box;
