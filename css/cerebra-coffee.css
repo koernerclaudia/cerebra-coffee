@@ -241,6 +241,15 @@ a:active {
   /* box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.3); */
 }
 
+.container_bestellung {
+  max-width: var(--max-box-width);
+  min-width: 280px;
+  height: auto;
+  margin: 25px auto 40px auto;
+  border-radius: var(--border-radius);
+  /* box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.3); */
+}
+
 .container_today {
   max-width: var(--max-box-width);
   min-width: 280px;
@@ -273,13 +282,13 @@ a:active {
   line-height: normal;
 }
 
-.green_img img {
+.green_img, .menu_img {
   max-width: 100%;
   border-radius: var(--border-radius);
 }
 
 
-.green_text, .green_img {
+.green_text, .green_img_ph {
   flex: 1;
 }
 
@@ -302,6 +311,18 @@ a:active {
   height: 100%;
   width: auto;
   text-align: center;
+
+}
+
+.bestellung-text {
+  text-align: left;
+  background-color: var(--cerebra-green);
+  border-radius: var(--border-radius);
+  padding: 20px;
+  height: 100%;
+  width: auto;
+  text-align: center;
+  font-size: var(--fs-m);
 
 }
 
@@ -406,9 +427,14 @@ a:active {
 
 }
 
+.menu_img_ph {
+margin-bottom: 35px;}
+
 .menu_img {
-  margin-bottom: 35px;
+  border-radius: var(--border-radius);
+  width: 100%;
 }
+
 
 .menu_column {
   display: -webkit-box;
@@ -443,6 +469,7 @@ a:active {
   justify-content: space-evenly;
   padding-bottom: 20px;
 }
+
 
 
 /* ---------------- GRIDS ------------------ */
@@ -626,7 +653,7 @@ label {
 
   }
 
-  .green_text, .green_img {
+  .green_text, .green_img_ph {
     flex: 1;
   }
 
@@ -704,10 +731,6 @@ h3 {
       height: auto;
     }
 
-    .green_img, img {
-      min-width: 250px;
-    }
-
     /* button, .button__secondary, .button__black {
       min-width: auto;
       padding: 5px 5px;
@@ -727,7 +750,7 @@ h3 {
     
     }
 
-    .green_img img {
+    .green_img {
       max-width: 100%;
       height: 100%;
       border-radius: var(--border-radius);
@@ -777,7 +800,7 @@ h3 {
     font-size: var(--fs-s);
   }
 
-  .green_text, .green_img {
+  .green_text, .green_img_ph {
     flex: 1;
   }
 
@@ -830,6 +853,10 @@ h3 {
     min-width: 280px;
     height: auto;
     text-align: center;
+  }
+
+  .box-button {
+    font-size: var(--fs-xs);
   }
 
 

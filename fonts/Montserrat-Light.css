@@ -21,11 +21,13 @@
 
 body {
     font-family: 'Montserrat-Light', sans-serif;
+    font-weight: 300;
 }
 
 h1.sw-font-family-default,
 h2.sw-font-family-default {
     font-family: 'Montserrat-Light', sans-serif;
+    font-weight: 300;
 }
 
 section.sw-font-family-default,
