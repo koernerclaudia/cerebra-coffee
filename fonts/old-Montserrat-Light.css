@@ -3,7 +3,7 @@
     src: url('/css/Montserrat1.woff2') format('woff2'),
     url('/css/Montserrat1.otf') format('opentype'),
         url('/css/Montserrat1.woff') format('woff');
-    font-weight: 300;
+    font-weight: thin;
     font-style: normal;
     font-display: swap;
 }

@@ -14,20 +14,14 @@
         url('Montserrat-Light.ttf') format('truetype'),
         url('Montserrat-Light.eot') format('embedded opentype')
         ;
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
 
 body {
     font-family: 'Montserrat-Light', sans-serif;
-    font-weight: 300;
 }
 
 h1.sw-font-family-default,
 h2.sw-font-family-default {
     font-family: 'Montserrat-Light', sans-serif;
-    font-weight: 300;
 }
 
 section.sw-font-family-default,

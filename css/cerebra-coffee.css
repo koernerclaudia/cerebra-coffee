@@ -5,12 +5,8 @@
 * Browsers: last 4 version
 */
 
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
+@import url(../fonts/Montserrat-Light.css);
+
 
 :root {
   --cerebra-green: #4D635E;
@@ -23,21 +19,115 @@
   --border-radius: 20px;
   --radius-button: 50px;
 
+  --fs-cerebra: 7.5rem;
+  --fs-xxl: 3rem;
   --fs-xl: 2.6rem;
   --fs-lg: 2rem;
   --fs-m: 1.5rem;
   --fs-s: 1.1rem;
   --fs-xs: 0.9rem;}
 
+  /* neontext */
+
+  .neonText {
+    color: #b336e4;
+    font-weight: 300;
+    text-shadow:
+    0 0 4px #bc13fe,
+    0 0 6px #bc13fe,
+    0 0 9px #bc13fe,
+    0 0 20px #bc13fe,
+    0 0 40px #bc13fe,
+    0 0 45px #bc13fe,
+    0 0 50px #bc13fe,
+    0 0 80px #bc13fe;
+    font-size: var(--fs-cerebra);
+    animation: pulsate 4s infinite alternate;  
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 300;
+  }
+
+  .neonCerebra {
+    color: #b336e4;
+    text-shadow:
+    0 0 4px #bc13fe,
+    0 0 6px #bc13fe,
+    0 0 9px #bc13fe,
+    0 0 20px #bc13fe,
+    0 0 40px #bc13fe,
+    0 0 45px #bc13fe,
+    0 0 50px #bc13fe,
+    0 0 80px #bc13fe;
+    font-size: var(--fs-cerebra);
+    animation: pulsate 4s infinite alternate;  
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 300;
+  }
+
+  .e {
+    font-family: 'Montserrat-Light';
+    font-weight: 300;
+  }
+  
+  @keyframes pulsate {
+      
+     100% {
+  
+        text-shadow:
+        0 0 2px #cec9c9,
+      0 0 4px #cec9c9,
+      0 0 6px #cec9c9,
+        0 0 20px #bc13fe,
+        0 0 40px #bc13fe,
+        0 0 45px #bc13fe,
+        0 0 50px #bc13fe,
+        0 0 80px #bc13fe;
+    
+    }
+    
+    50% {
+  
+        text-shadow:
+        0 0 2px #cec9c9,
+      0 0 4px #cec9c9,
+      0 0 6px #cec9c9,
+        0 0 5px #bc13fe,
+        0 0 15px #bc13fe,
+        0 0 20px #bc13fe,
+        0 0 30px #bc13fe,
+        0 0 60px #bc13fe;
+    
+    }
+
+    0% {
+  
+      text-shadow:
+      0 0 2px #cec9c9,
+      0 0 4px #cec9c9,
+      0 0 6px #cec9c9,
+      0 0 5px #bc13fe,
+      0 0 25px #bc13fe,
+      0 0 30px #bc13fe,
+      0 0 35px #bc13fe,
+      0 0 40px #bc13fe;
+  
+  } 
+}
+
+
+  /* main */
+
   @media all and (min-width: 768px) and (max-width: 1150px) {
     :root {
       --fs-s: 0.9rem;
+      --fs-cerebra: 5.8rem;
     }
   }
 
 
 @media all and (min-width: 500px) and (max-width: 768px) {
   :root {
+    --fs-cerebra: 3.7rem;
     --fs-xl: 1.8rem;
     --fs-lg: 1.7rem;
     --fs-m: 1.3rem;
@@ -48,6 +138,7 @@
 
 @media all and (max-width: 500px) {
   :root {
+    --fs-cerebra: 2.8rem;
     --fs-xl: 1.9rem;
     --fs-lg: 1.6rem;
     --fs-m: 1.3rem;
@@ -110,9 +201,9 @@ h3 {
   font-family: Roboto Mono;
 }
 
-.e {
+/* .e {
   font-family: 'Montserrat-Light';
-}
+} */
 
 .center {
   text-align: center;
