@@ -1,0 +1,23 @@
+.container div {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    /* margin-bottom: 30px; */
+}
+
+.container .item01 { height: 710px;  }
+.container .item02 { height: 610px;  }
+.container .item03 { height: 630px;  }
+.container .item04 { height: 620px;  }
+.container .item05 { height: 840px;  }
+.container .item06 { height: 620px;  }
+.container .item07 { height: 720px;  }
+.container .item08 { height: 770px;  }
+.container .item09 { height: 490px;  }
+.container .item10 { height: 880px;  }
+.container .item11 { height: auto;  }
+.container .item12 { height: auto;  }
+
+
