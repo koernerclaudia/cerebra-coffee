@@ -1,5 +1,5 @@
 .container div {
-    width: 330px;
+    width: 350px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,9 +7,9 @@
     /* margin-bottom: 30px; */
 }
 
-.container .item01 { height: 740px;  }
-.container .item02 { height: 610px;  }
-.container .item03 { height: 630px;  }
+.container .item01 { height: 700px;  }
+.container .item02 { height: 620px;  }
+.container .item03 { height: 620px;  }
 .container .item04 { height: 620px;  }
 .container .item05 { height: 840px;  }
 .container .item06 { height: 620px;  }
