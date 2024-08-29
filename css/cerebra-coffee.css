@@ -151,8 +151,8 @@ page-break-inside: avoid;
      text-align: center;
 }
 
-.logo-footer {
-  width: 250px;
+.logo {
+  height: 50px;
 }
 
 .milk {
@@ -267,35 +267,7 @@ td {
 
   /* main */
 
-  @media all and (min-width: 768px) and (max-width: 1150px) {
-    :root {
-      --fs-s: 0.9rem;
-      --fs-cerebra: 5.8rem;
-    }
-  }
 
-
-@media all and (min-width: 500px) and (max-width: 768px) {
-  :root {
-    --fs-cerebra: 3.7rem;
-    --fs-xl: 1.8rem;
-    --fs-lg: 1.7rem;
-    --fs-m: 1.3rem;
-    --fs-s: 0.9rem;
-    --fs-xs: 0.8rem;
-  }
-}
-
-@media all and (max-width: 500px) {
-  :root {
-    --fs-cerebra: 2.8rem;
-    --fs-xl: 1.9rem;
-    --fs-lg: 1.6rem;
-    --fs-m: 1.3rem;
-    --fs-s: 0.9rem;
-    --fs-xs: 0.7rem;
-  }
-}
 
 * {
   -webkit-box-sizing: border-box;
@@ -394,27 +366,7 @@ a:active {
   /* text-decoration: underline; */
 }
 
-.page_footer {
-  font-family: "Inter", sans-serif;
-  font-weight: 100;
-  font-size: var(--fs-s);
-  line-height: 1.6em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 30px;
-  -ms-grid-columns: 3fr 30px 3fr 30px 4fr 30px 3fr 30px 3fr;
-  grid-template-columns: 3fr 3fr 4fr 3fr 3fr;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-evenly;
-  margin: 25px auto 25px auto;
-  max-width: var(--max-box-width);
-  min-width: 280px;
-  height: auto;
-  text-align: center;
-}
+
 
 .iframe {
   background-color: #4D635E;
@@ -808,13 +760,41 @@ label {
 
 
 
+.page_footer {
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  font-size: var(--fs-s);
+  line-height: 1.6em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 25px 3fr 25px 4fr 25px 3fr 25px 3fr;
+  grid-template-columns: 3fr 3fr 4fr 3fr 3fr;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-evenly;
+  margin: 25px auto 25px auto;
+  max-width: var(--max-box-width);
+  min-width: 280px;
+  height: auto;
+  text-align: center;
+}
+
+
+/* ----------------------------------------------------------- Media Queries ------ */
+
+@media (min-width: 1200px) and all {
+  
+}
 
 
 
-/* ------ Media Queries ------ */
-
-@media all and (min-width: 768px) and (max-width:1150px) {
-
+@media all and (min-width: 768px) and (max-width: 1200px) {
+  :root {
+    --fs-s: 0.9rem;
+    --fs-cerebra: 5.8rem;
+  }
 
   .green_box,
   .green_box_reverse {
@@ -878,8 +858,15 @@ label {
  
 }
 
-@media all and (min-width: 500px) and (max-width: 768px) {
-
+@media all and (min-width: 576px) and (max-width: 768px) {
+  :root {
+    --fs-cerebra: 3.7rem;
+    --fs-xl: 1.8rem;
+    --fs-lg: 1.7rem;
+    --fs-m: 1.3rem;
+    --fs-s: 0.9rem;
+    --fs-xs: 0.8rem;
+  }
 
   .green_box,
   .green_box_reverse {
@@ -1000,7 +987,17 @@ h3 {
 }
 
 
-@media all and (max-width: 500px) {
+@media (min-width: 480px) and (max-width: 576px) {
+
+  .typewriter-text {
+    width: 150px;
+    font-family: "Roboto Mono", monospace;
+    color: white;
+    font-size: var(--fs-xs);
+    -webkit-animation: blink-caret 0.75s step-end infinite;
+    animation: blink-caret 0.75s step-end infinite;
+    padding-left: 10px;
+  }
 
   .menu_box-3 {
     display: -ms-grid;
@@ -1046,7 +1043,7 @@ h3 {
   }
 
   h1 {
-    font-size: var(--fs-xl);
+    font-size: var(--fs-lg);
     text-align: center;
   }
 
@@ -1076,6 +1073,146 @@ h3 {
 
   }
 
+  .neonText {
+    font-size: var(--fs-m);
+  }
+
+
+  .box-button {
+    font-size: var(--fs-s);
+  }
+
+  .page_footer {
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+    font-size: var(--fs-xs);
+    line-height: 1.6em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-evenly;
+    max-width: var(--max-box-width);
+    min-width: 280px;
+    height: auto;
+    text-align: center;
+  }
+
+
+}
+
+@media all and (max-width: 480px) {
+  :root {
+    --fs-cerebra: 2rem;
+    --fs-xl: 1.9rem;
+    --fs-lg: 1.6rem;
+    --fs-m: 1.3rem;
+    --fs-s: 0.9rem;
+    --fs-xs: 0.7rem;
+  }
+
+  .page_footer {
+    font-size: var(--fs-xs);
+    
+  }
+
+
+  .typewriter-text {
+    width: 150px;
+    font-family: "Roboto Mono", monospace;
+    color: white;
+    font-size: var(--fs-xs);
+    -webkit-animation: blink-caret 0.75s step-end infinite;
+    animation: blink-caret 0.75s step-end infinite;
+    padding-left: 10px;
+  }
+
+  .menu_box-3 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .green_box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .green_box_reverse {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+
+  .box-body-text {
+    text-align: left;
+    padding-bottom: 20px;
+    font-size: var(--fs-s);
+  }
+
+  .box-extra-text {
+    font-family: "Roboto Mono";
+    text-align: left;
+    font-size: var(--fs-s);
+  }
+
+  .green_text, .green_img_ph {
+    flex: 1;
+  }
+
+  h1 {
+    font-size: var(--fs-lg);
+    text-align: center;
+  }
+
+  h2 {
+    font-size: var(--fs-lg);
+  }
+
+  h3 {
+    font-size: var(--fs-m);
+  }
+
+  .menu_box_kaffee {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+
+  }
+
+  .coffee-text {
+    padding: 20px;
+    margin: 15px 15px;
+    height: auto;
+
+  }
+
+  .box-button {
+    font-size: var(--fs-xs);
+  }
+  .page_footer {
+    font-size: var(--fs-xs);
+    
+  }
+
   .page_footer {
     font-family: "Inter", sans-serif;
     font-weight: 200;
@@ -1096,9 +1233,10 @@ h3 {
     text-align: center;
   }
 
-  .box-button {
-    font-size: var(--fs-xs);
-  }
+  @media all and (max-width: 320px) {
 
 
+    .page_footer {
+      font-size: var(--fs-xs);
+    }
 }
