@@ -54,9 +54,9 @@ a {
   margin-bottom: 30px;
 }
 
-.nav-branding {
-  font-size: 2rem;
-}
+/* .nav-branding {
+font-size: 2rem;
+} */
 
 .nav-link{
   transition:  0.7s ease;

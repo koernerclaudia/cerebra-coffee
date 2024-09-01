@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Kreuzberg's Hotspot für leckeren Kaffee und hausgemachte Kuchen & Torten, Sandwiches & Brunch. Täglich geöffnet!" />
   <title>Cerebra Coffee - Home</title>
+  <meta name="description" content="Kreuzberg's Hotspot für leckeren Kaffee und hausgemachte Kuchen & Torten, Sandwiches & Brunch. Täglich geöffnet!" />
   <!-- Normalize CSS for browser -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <!-- Use Fontawesome imagery -->
@@ -38,7 +38,7 @@
   <div class="main_frame">
     <header>
       <nav class="navbar">
-        <a class="nav-branding"><img src="svg/cerebra-coffee-logo.svg" height="70px"
+        <a class="nav-branding"><img class="home-logo" src="svg/cerebra-coffee-logo.svg" 
             alt="Cerebra Coffee Logo" /></a>
             <div class="typewriter-text"></div>
         <ul class="nav-menu">
@@ -76,8 +76,7 @@
     <section class="container_green">
       <div class="green_box">
         <div class="green_img_ph"><img class="green_img" src="img/espresso-making.jpg" alt="Making Espresso" /></div>
-        <div class="green_text">
-          <h1>Lecker Kaffee in Kreuzberg!</h1>
+        <div class="green_text"><h1>Lecker Kaffee in Kreuzberg!</h1>
           <div class="box-body-text">Ob morgendliche Dosis Koffein, Brunch, Mittagspause oder Käffchen während der
             Gassi-Runde - wir sind für euch da!</div>
           <div class="box-extra-text"><b>Geöffnet:</b><br>
@@ -89,12 +88,12 @@
 
 
 
-    <section>
+    <!-- <section>
       <h1 class="center">Heute im Angebot</h1>
       <div style="color: #ffffff" id="datetime" class="date-time-picker-holder"></div>
       </section>
       <section class="container_today">
-        <iframe id="softr-5c03b25e-9633-46d6-806d-71eddfb69d3b-cerebra-coffee-angebot" src="https://cerebracoffee.softr.app/embed/pages/5c03b25e-9633-46d6-806d-71eddfb69d3b/blocks/cerebra-coffee-angebot" width="100%" height="fit-content" scrolling="no" frameborder="0" style="border:none;"></iframe>    <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.2.11/iframeResizer.min.js"></script>    <script> iFrameResize({ checkOrigin: false, log: true }, '#softr-5c03b25e-9633-46d6-806d-71eddfb69d3b-cerebra-coffee-angebot');</script>    </section>
+        <iframe id="softr-5c03b25e-9633-46d6-806d-71eddfb69d3b-cerebra-coffee-angebot" src="https://cerebracoffee.softr.app/embed/pages/5c03b25e-9633-46d6-806d-71eddfb69d3b/blocks/cerebra-coffee-angebot" width="100%" height="fit-content" scrolling="no" frameborder="0" style="border:none;"></iframe>    <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.2.11/iframeResizer.min.js"></script>    <script> iFrameResize({ checkOrigin: false, log: true }, '#softr-5c03b25e-9633-46d6-806d-71eddfb69d3b-cerebra-coffee-angebot');</script>    </section> -->
 
 
     <!-- <section class="container_green">
@@ -118,10 +117,16 @@
 
 
     <section>
-      <div class="headline"><div class="neonText">W<span class="e">ee</span>kly Sp<span class="e">e</span>cials</div>
-    </section>
+      <div class="headline"><div class="neonText">W<span class="e">ee</span>kly Sp<span class="e">e</span>cials</div></div>
 
-    <section class="container_green"></section>
+      
+    </section>
+    <br /><br />
+    <iframe id="softr-5c03b25e-9633-46d6-806d-71eddfb69d3b-list4" src="https://cerebracoffee.softr.app/embed/pages/5c03b25e-9633-46d6-806d-71eddfb69d3b/blocks/list4" width="100%" height="auto" scrolling="no" frameborder="0" style="border:none;"></iframe>    <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.2.11/iframeResizer.min.js"></script>    <script> iFrameResize({ checkOrigin: false, log: true }, '#softr-5c03b25e-9633-46d6-806d-71eddfb69d3b-list4');</script>
+
+    <!-- <section class="container_green">
+      <iframe id="softr-5c03b25e-9633-46d6-806d-71eddfb69d3b-list2" src="https://cerebracoffee.softr.app/embed/pages/5c03b25e-9633-46d6-806d-71eddfb69d3b/blocks/list2" width="100%" height="auto" scrolling="no" frameborder="0" style="border:none;"></iframe>    <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.2.11/iframeResizer.min.js"></script>    <script> iFrameResize({ checkOrigin: false, log: true }, '#softr-5c03b25e-9633-46d6-806d-71eddfb69d3b-list2');</script>
+    </section> -->
 
     <section class="container_coffee">
       <h1 class="center">Unser Kaffee</h1>
@@ -129,16 +134,16 @@
        
          
           <div class="coffee-text_border_blur"> 
-            <div><img src="svg/beans.svg" alt="Kaffeebohnen" /></div>
-            <div><h3>Perfekt <br>geröstet.</h3></div>
+            <div><img class="coffee_icon" src="svg/beans.svg" alt="Kaffeebohnen" /></div>
+            <div><h3>Perfekt geröstet.</h3></div>
             <div>Unsere selbstkreirte Hausröstung ist die Mischung für den Liebhaber des klassischen
             Kaffees mit ausgewogenem schokoladig-nussigen Geschmack.</div>
-            <div><img src="svg/coffee-mill.svg" alt="Kaffeemühle"/></div>
+            <div><img class="coffee_icon" src="svg/coffee-mill.svg" alt="Kaffeemühle"/></div>
             <div><h3>Optimaler Mahlgrad.</h3></div>
             <div>Die Einstellung des Mahlgrades, die Verteilung des gemahlenen Kaffee im Siebträger
               und der stets gleichmäßige Druck beim tampen.</div>
-              <div><img src="svg/mokka-maker.svg" alt="Mokka" /></div>
-            <div><h3>Leckerstes<br>Ergebnis.</h3></div>
+              <div><img class="coffee_icon" src="svg/mokka-maker.svg" alt="Mokka" /></div>
+            <div><h3>Leckerstes Ergebnis.</h3></div>
             <div>Das beste Ergebnis mit einer milden Säure und rundem Abgang.</div>
             
             </div><div></div>
@@ -212,7 +217,7 @@
         <footer class="page_footer">
           <div>Tel.&nbsp;+49&nbsp;(0)&nbsp;30&nbsp;81&nbsp;05&nbsp;14&nbsp;42<br><a target="_blank" href="mailto:hello@cerebracoffee.com">hello@cerebracoffee.com</a></div>
           <div>Ritterstr.&nbsp;127<br>10969&nbsp;Berlin<br></div>
-          <div><img src="svg/cerebra-coffee-full-logo.svg" alt="Cerebra Coffee"/></div>
+          <div><img class="logo" src="svg/cerebra-coffee-full-logo.svg" alt="Cerebra Coffee"/></div>
           <div><i class="fa-brands fa-instagram" alt="Cerebra Coffee auf Instagram"></i>&nbsp;&nbsp;<a href="https://www.instagram.com/cerebracoffee/" target="_blank">Instagram</a><br><i class="fa-brands fa-facebook"></i>&nbsp;&nbsp;<a href="https://www.facebook.com/cerebracoffee/" target="_blank">Facebook</a></div>
           <div><i class="fa-solid fa-location-dot" alt="Cerebra Coffee auf Facebook"></i>&nbsp;&nbsp;<a href="https://maps.app.goo.gl/DGg6fM6F7qavg5X68" target="_blank">Google Maps</a><br><a href="impressum.html">AGBs &amp; Impressum</a></div>
         </footer>
