@@ -13,7 +13,7 @@
   --cerebra-beige: #FBF0E3;
   --cerebra-brown: #6E5F4F;
   --text-color: #ffffff;
-  --max-box-width: 1000px;
+  --max-box-width: 1110px;
   --max-green-box: 320px;
   --border-radius: 20px;
   --radius-button: 50px;
@@ -588,8 +588,8 @@ margin-bottom: 35px;}
 .menu_box_kaffee1 {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 2fr 1fr;
-  grid-template-columns: 2fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
   -webkit-box-pack: space-evenly;
   -ms-flex-pack: space-evenly;
@@ -661,7 +661,7 @@ margin-bottom: 35px;}
   min-width: 280px;
   height: 700px;
   margin: 25px auto 40px auto;
-  background-image: url('../img/coffee-bg.jpg');
+  background-image: url('../img/coffee-background.jpg');
   background-size: fit;
   background-repeat: no-repeat;
   background-position: right;
@@ -847,8 +847,8 @@ margin-bottom: 35px;}
     .menu_box_kaffee1 {
       display: -ms-grid;
       display: grid;
-      -ms-grid-columns: 2fr 1fr;
-      grid-template-columns: 2fr 1fr;
+      -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
       grid-gap: 20px;
       -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
