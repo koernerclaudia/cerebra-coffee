@@ -22,9 +22,6 @@ header {
   margin: 0 auto;
 }
 
-li{
-  list-style: none;
-}
 a {
   color: #ffffff;
   text-decoration: none;
@@ -36,6 +33,10 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 0 24px;
+}
+
+.navbar li {
+  list-style: none;
 }
 
 .nav-menu  {

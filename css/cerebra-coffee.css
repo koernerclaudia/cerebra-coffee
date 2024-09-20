@@ -13,7 +13,7 @@
   --cerebra-beige: #FBF0E3;
   --cerebra-brown: #6E5F4F;
   --text-color: #ffffff;
-  --max-box-width: 1000px;
+  --max-box-width: 1110px;
   --max-green-box: 320px;
   --border-radius: 20px;
   --radius-button: 50px;
@@ -102,6 +102,20 @@ a:active {
   /* text-decoration: underline; */
 }
 
+.textlink {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.textlink:hover, :focus {
+  color: #ffffff;
+  text-decoration: none;
+  -webkit-transition: ease-in 0.3s;
+  -o-transition: ease-in 0.3s;
+  transition: ease-in 0.3s;
+  cursor: pointer;
+}
+
 
 
 h1, h2, h3, h4, h5, h6 {
@@ -116,6 +130,12 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: var(--fs-xxxl);
+}
+
+li {
+  list-style-type: disc; /* Default bullet points */
+  margin-left: 20px;
+  padding-left: 0;
 }
 
 button,
@@ -588,8 +608,8 @@ margin-bottom: 35px;}
 .menu_box_kaffee1 {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 2fr 1fr;
-  grid-template-columns: 2fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
   -webkit-box-pack: space-evenly;
   -ms-flex-pack: space-evenly;
@@ -661,7 +681,7 @@ margin-bottom: 35px;}
   min-width: 280px;
   height: 700px;
   margin: 25px auto 40px auto;
-  background-image: url('../img/coffee-bg.jpg');
+  background-image: url('../img/coffee-background.jpg');
   background-size: fit;
   background-repeat: no-repeat;
   background-position: right;
@@ -847,8 +867,8 @@ margin-bottom: 35px;}
     .menu_box_kaffee1 {
       display: -ms-grid;
       display: grid;
-      -ms-grid-columns: 2fr 1fr;
-      grid-template-columns: 2fr 1fr;
+      -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
       grid-gap: 20px;
       -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
@@ -877,7 +897,7 @@ margin-bottom: 35px;}
   }
 
   h3 {
-    font-size: var(--fs-m);
+    font-size: var(--fs-xl);
   }
 
 
@@ -1018,7 +1038,7 @@ h2 {
 }
 
 h3 {
-  font-size: var(--fs-m);
+  font-size: var(--fs-xl);
 }
 
 
@@ -1184,7 +1204,7 @@ h3 {
   }
 
   h3 {
-    font-size: var(--fs-m);
+    font-size: var(--fs-xl);
   }
 
   /* .menu_box_kaffee {
@@ -1373,7 +1393,7 @@ h3 {
   }
 
   h3 {
-    font-size: var(--fs-m);
+    font-size: var(--fs-xl);
   }
 
   /* .menu_box_kaffee {
@@ -1502,7 +1522,7 @@ h3 {
     }
   
     h3 {
-      font-size: var(--fs-m);
+      font-size: var(--fs-xl);
     }
   
     /* .menu_box_kaffee {
