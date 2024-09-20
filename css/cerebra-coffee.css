@@ -102,6 +102,20 @@ a:active {
   /* text-decoration: underline; */
 }
 
+.textlink {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.textlink:hover, :focus {
+  color: #ffffff;
+  text-decoration: none;
+  -webkit-transition: ease-in 0.3s;
+  -o-transition: ease-in 0.3s;
+  transition: ease-in 0.3s;
+  cursor: pointer;
+}
+
 
 
 h1, h2, h3, h4, h5, h6 {
@@ -116,6 +130,12 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: var(--fs-xxxl);
+}
+
+li {
+  list-style-type: disc; /* Default bullet points */
+  margin-left: 20px;
+  padding-left: 0;
 }
 
 button,
@@ -877,7 +897,7 @@ margin-bottom: 35px;}
   }
 
   h3 {
-    font-size: var(--fs-m);
+    font-size: var(--fs-xl);
   }
 
 
@@ -1018,7 +1038,7 @@ h2 {
 }
 
 h3 {
-  font-size: var(--fs-m);
+  font-size: var(--fs-xl);
 }
 
 
@@ -1184,7 +1204,7 @@ h3 {
   }
 
   h3 {
-    font-size: var(--fs-m);
+    font-size: var(--fs-xl);
   }
 
   /* .menu_box_kaffee {
@@ -1373,7 +1393,7 @@ h3 {
   }
 
   h3 {
-    font-size: var(--fs-m);
+    font-size: var(--fs-xl);
   }
 
   /* .menu_box_kaffee {
@@ -1502,7 +1522,7 @@ h3 {
     }
   
     h3 {
-      font-size: var(--fs-m);
+      font-size: var(--fs-xl);
     }
   
     /* .menu_box_kaffee {
