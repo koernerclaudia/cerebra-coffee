@@ -1387,9 +1387,9 @@ h3 {
   }
 
   .green_text, .green_img_ph {
-    flex: 1;
-    max-height: 350px;
-  }
+    width: auto;
+    height: 250px;
+   }
 
 
   h2 {
@@ -1517,8 +1517,8 @@ h3 {
     }
   
     .green_text, .green_img_ph {
-      flex: 1;
-     height: 300px;
+     width: auto;
+     height: 250px;
     }
   
   
