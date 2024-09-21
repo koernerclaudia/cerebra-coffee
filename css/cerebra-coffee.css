@@ -218,6 +218,7 @@ button.active,
 
 .green_text, .green_img_ph {
   flex: 1;
+  max-height: 350px;
 }
 
 
