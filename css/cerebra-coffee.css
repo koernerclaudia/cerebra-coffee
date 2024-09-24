@@ -218,6 +218,9 @@ button.active,
 
 .green_text, .green_img_ph {
   flex: 1;
+}
+
+.green_img_pg {
   max-height: 350px;
 }
 
@@ -630,6 +633,31 @@ margin-bottom: 35px;}
   padding-bottom: 20px;
 } */
 
+.catering-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px 20px;
+}
+
+.catering-item {
+  display: flex;
+  align-items: center; /* Align icon and text vertically in the center */
+  flex: 1 1 100%; /* Make each item take up full width (if you want two items per row, change this later) */
+  padding: 5px;
+  
+}
+
+.catering-item i {
+  margin-right: 20px; /* Adds space between the icon and the text */
+ 
+}
+
+.catering-item div:last-child {
+  flex-grow: 1; /* Allows the text to grow and take available space */
+}
+
 
 
 /* END ========================================= SPEISEKARTE - MENUS */
@@ -708,6 +736,9 @@ margin-bottom: 35px;}
 
 .green_text, .green_img_ph {
   flex: 1;
+}
+
+.green_img_pg {
   max-height: 350px;
 }
 
@@ -1011,6 +1042,9 @@ margin-bottom: 35px;}
 
   .green_text, .green_img_ph {
     flex: 1;
+  }
+  
+  .green_img_pg {
     max-height: 350px;
   }
 
@@ -1194,6 +1228,9 @@ h3 {
   }
   .green_text, .green_img_ph {
     flex: 1;
+  }
+  
+  .green_img_pg {
     max-height: 350px;
   }
 
@@ -1387,9 +1424,12 @@ h3 {
   }
 
   .green_text, .green_img_ph {
-    width: auto;
-    height: 250px;
-   }
+    flex: 1;
+  }
+  
+  .green_img_pg {
+    max-height: 350px;
+  }
 
 
   h2 {
@@ -1517,8 +1557,11 @@ h3 {
     }
   
     .green_text, .green_img_ph {
-     width: auto;
-     height: 250px;
+      flex: 1;
+    }
+    
+    .green_img_pg {
+      max-height: 350px;
     }
   
   
