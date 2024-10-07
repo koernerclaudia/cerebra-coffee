@@ -102,6 +102,14 @@ a:active {
   /* text-decoration: underline; */
 }
 
+hr {
+  border: none; /* Remove border */
+  height: 0.7px; /* Set height less than 1px */
+  background-color: rgba(255, 255, 255, 0.7); /* White color with 50% transparency */
+  margin: 10px auto; /* Center the line */
+  width: 90%; /* Set the width */
+}
+
 .textlink {
   color: #ffffff;
   text-decoration: underline;
@@ -130,6 +138,13 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: var(--fs-xxxl);
+}
+
+.speisekarte-menu-title {
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 200;
 }
 
 li {
@@ -173,6 +188,17 @@ button,
   border-radius: var(--radius-button);
 }
 
+.button__paypal {
+  font-family: 'Montserrat';
+  border: none;
+  min-width: auto;
+  background-color: #fcc636;
+  color: var(--cerebra-background-dark);
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: var(--radius-button);
+}
+
 button:hover,
 button:focus,
 .button:hover,
@@ -180,7 +206,9 @@ button:focus,
 .button__secondary:hover,
 .button__secondary:focus,
 .button__black:hover,
-.button__black:focus {
+.button__black:focus,
+.button__paypal:hover,
+.button__paypal:focus {
   cursor: pointer;
   background-color: var(--cerebra-beige);
   color: var(--cerebra-background-dark);
@@ -193,7 +221,8 @@ button:focus,
 button.active,
 .button.active,
 .button__secondary.active,
-.button__black.active {
+.button__black.active,
+.button__paypal.active {
   background-color: var(--cerebra-beige);
   color: var(--cerebra-background-dark);
 }
@@ -785,15 +814,15 @@ margin-bottom: 35px;}
 .coffee-text_border_blur {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 25px 2fr 25px 6fr;
-  grid-template-columns: 1fr 2fr 6fr;
+  -ms-grid-columns: 1fr  3fr  5fr;
+  grid-template-columns: 1fr 3fr 5fr;
   grid-gap: 25px;
   text-align: left;
   border-radius: var(--border-radius);
   border: 1px solid;
   border-color: var(--cerebra-green);
   padding: 25px;
-  margin: 0 15px;
+  margin: 10px 15px;
   height: 100%;
   width: auto;
   background: rgba(255, 255, 255, 0.1);
@@ -896,6 +925,8 @@ margin-bottom: 35px;}
     h1 {
       font-size: var(--fs-xxxl);
     }
+
+  
 
     .menu_box_kaffee1 {
       display: -ms-grid;
